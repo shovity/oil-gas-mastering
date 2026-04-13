@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 4: Hiểu vĩ mô | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 4: Hiểu vĩ mô</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 4: Hiểu vĩ mô</h1>
+          <div class="lesson-meta">
+            <span>~4 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="4.1" onclick="scrollToSection('lesson-4-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">4.1 - Các yếu tố vĩ mô chính</div>
+              </div>
+              <div class="checklist-item" data-lesson="4.2" onclick="scrollToSection('lesson-4-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">4.2 - Ma trận ảnh hưởng vĩ mô</div>
+              </div>
+              <div class="checklist-item" data-lesson="4.3" onclick="scrollToSection('lesson-4-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">4.3 - Động lực tăng trưởng</div>
+              </div>
+              <div class="checklist-item" data-lesson="4.4" onclick="scrollToSection('lesson-4-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">4.4 - Rủi ro cần theo dõi</div>
+              </div>
+              <div class="checklist-item" data-lesson="4.5" onclick="scrollToSection('lesson-4-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">4.5 - Câu hỏi vĩ mô cần trả lời</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 4.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-4-1">
+          <h2>4.1 Các yếu tố vĩ mô chính</h2>
+
+          <p>Ngành dầu khí chịu ảnh hưởng mạnh từ các yếu tố vĩ mô. Hiểu rõ từng yếu tố giúp bạn dự đoán xu hướng và đánh giá rủi ro.</p>
+
+          <h3>Bảng các yếu tố vĩ mô</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Yếu tố</th>
+                  <th>Tác động</th>
+                  <th>Ai bị ảnh hưởng nhất</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Giá dầu Brent</strong></td>
+                  <td>#1 - Quyết định 70% câu chuyện</td>
+                  <td>Upstream trực tiếp, cả ngành gián tiếp</td>
+                </tr>
+                <tr>
+                  <td><strong>Quyết định OPEC+</strong></td>
+                  <td>Cắt/tăng sản lượng → ảnh hưởng giá dầu</td>
+                  <td>Toàn ngành</td>
+                </tr>
+                <tr>
+                  <td><strong>Nhu cầu dầu toàn cầu</strong></td>
+                  <td>Trung Quốc + Mỹ + EU = 60% nhu cầu</td>
+                  <td>Toàn ngành</td>
+                </tr>
+                <tr>
+                  <td><strong>Sản xuất shale oil Mỹ</strong></td>
+                  <td>Giá >$70 → shale oil tăng → ép giá</td>
+                  <td>Upstream</td>
+                </tr>
+                <tr>
+                  <td><strong>Tỷ giá USD/VND</strong></td>
+                  <td>Dầu giao dịch bằng USD. USD tăng → upstream hưởng lợi</td>
+                  <td>Upstream XANH, Downstream ĐỎ</td>
+                </tr>
+                <tr>
+                  <td><strong>Giá khí tự nhiên (Henry Hub, TTF)</strong></td>
+                  <td>Ảnh hưởng giá khí VN + giá phân bón</td>
+                  <td>GAS, DPM, DCM</td>
+                </tr>
+                <tr>
+                  <td><strong>Chính sách năng lượng VN</strong></td>
+                  <td>Quy hoạch điện, dự án LNG, năng lượng tái tạo</td>
+                  <td>GAS (hưởng lợi LNG), upstream (rủi ro dài hạn)</td>
+                </tr>
+                <tr>
+                  <td><strong>Địa chính trị</strong></td>
+                  <td>Chiến tranh Trung Đông, Nga-Ukraine → gián đoạn cung</td>
+                  <td>Giá dầu tăng đột biến</td>
+                </tr>
+                <tr>
+                  <td><strong>CAPEX PVN</strong></td>
+                  <td>Đầu tư thăm dò tăng/giảm</td>
+                  <td>PVD, PVS trực tiếp</td>
+                </tr>
+                <tr>
+                  <td><strong>Giá phân bón thế giới</strong></td>
+                  <td>Ảnh hưởng DT + LN phân bón VN</td>
+                  <td>DPM, DCM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">Yếu tố quan trọng nhất</div>
+            <p><strong>Giá dầu Brent</strong> là yếu tố số 1, quyết định 70% câu chuyện của toàn ngành. Khi phân tích vĩ mô, luôn bắt đầu từ giá dầu và xu hướng của nó.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('4.1'); scrollToSection('lesson-4-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 4.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-4-2">
+          <h2>4.2 Ma trận ảnh hưởng vĩ mô</h2>
+
+          <p>Mỗi yếu tố vĩ mô ảnh hưởng khác nhau đến từng phân khúc. Đây là ma trận chi tiết để tra cứu nhanh.</p>
+
+          <h3>Ma trận ảnh hưởng</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Yếu tố</th>
+                  <th>Upstream (PVD/PVS)</th>
+                  <th>Lọc dầu (BSR)</th>
+                  <th>Bán lẻ (PLX)</th>
+                  <th>Phân bón (DPM/DCM)</th>
+                  <th>Khí (GAS)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Giá dầu tăng</strong></td>
+                  <td style="color: var(--success);">XANH</td>
+                  <td style="color: var(--warning);">VÀNG (tùy crack spread)</td>
+                  <td style="color: var(--warning);">VÀNG (lãi tồn kho)</td>
+                  <td style="color: var(--error);">ĐỎ (giá khí đầu vào tăng)</td>
+                  <td style="color: var(--success);">XANH</td>
+                </tr>
+                <tr>
+                  <td><strong>Giá dầu giảm</strong></td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG (lỗ tồn kho)</td>
+                  <td style="color: var(--success);">XANH (giá khí giảm)</td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                </tr>
+                <tr>
+                  <td><strong>USD tăng</strong></td>
+                  <td style="color: var(--success);">XANH (bán dầu USD)</td>
+                  <td style="color: var(--error);">ĐỎ (mua dầu USD)</td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                </tr>
+                <tr>
+                  <td><strong>OPEC+ cắt giảm</strong></td>
+                  <td style="color: var(--success);">XANH</td>
+                  <td style="color: var(--error);">ĐỎ (dầu thô đắt)</td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                </tr>
+                <tr>
+                  <td><strong>TQ nhu cầu yếu</strong></td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--error);">ĐỎ (xuất khẩu phân bón giảm)</td>
+                  <td style="color: var(--error);">ĐỎ</td>
+                </tr>
+                <tr>
+                  <td><strong>PVN tăng CAPEX</strong></td>
+                  <td style="color: var(--success);">XANH XANH</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                  <td style="color: var(--warning);">VÀNG</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box success">
+            <div class="info-box-title">Cách sử dụng ma trận</div>
+            <p>Khi có tin vĩ mô mới (vd: OPEC+ cắt giảm sản lượng), tra ma trận để biết phân khúc nào hưởng lợi, phân khúc nào chịu thiệt. Từ đó quyết định tăng/giảm tỷ trọng cổ phiếu tương ứng.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('4.2'); scrollToSection('lesson-4-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 4.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-4-3">
+          <h2>4.3 Động lực tăng trưởng</h2>
+
+          <p>Hiểu rõ các động lực tăng trưởng giúp bạn tìm cổ phiếu có tiềm năng dài hạn. Động lực chia thành 2 loại: cấu trúc (dài hạn) và chu kỳ (ngắn hạn).</p>
+
+          <h3>Động lực cấu trúc (dài hạn)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Động lực</th>
+                  <th>Ai hưởng lợi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Chuyển dịch sang LNG nhập khẩu</td>
+                  <td>GAS (vận hành terminal), PVS (xây lắp)</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Điện khí tăng tỷ trọng trong Quy hoạch Điện 8</td>
+                  <td>GAS, PVT</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Mỏ khí mới (Cá Voi Xanh, Lô B)</td>
+                  <td>PVS, PVD, GAS</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>An ninh năng lượng → VN vẫn cần khai thác nội địa</td>
+                  <td>Upstream</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Nhu cầu phân bón ĐNA tăng (dân số, nông nghiệp)</td>
+                  <td>DPM, DCM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Động lực chu kỳ (ngắn hạn)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Động lực</th>
+                  <th>Ảnh hưởng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>6</td>
+                  <td>OPEC+ cắt giảm → giá dầu tăng</td>
+                  <td>Upstream hưởng lợi</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Trung Quốc mở cửa → nhu cầu dầu tăng</td>
+                  <td>Giá dầu tăng</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PVN tăng CAPEX thăm dò</td>
+                  <td>PVD, PVS có hợp đồng</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Chiến tranh/địa chính trị → gián đoạn cung</td>
+                  <td>Giá dầu tăng đột biến</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>La Nina → mùa vụ tốt → nhu cầu phân bón</td>
+                  <td>DPM, DCM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">Phân biệt động lực</div>
+            <p><strong>Động lực cấu trúc</strong> kéo dài nhiều năm, giúp bạn chọn cổ phiếu giữ dài hạn. <strong>Động lực chu kỳ</strong> kéo dài vài quý đến 1-2 năm, giúp bạn tính thời điểm mua/bán.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('4.3'); scrollToSection('lesson-4-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 4.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-4-4">
+          <h2>4.4 Rủi ro cần theo dõi</h2>
+
+          <p>Bên cạnh động lực, cần hiểu rõ các rủi ro để tránh mất tiền. Rủi ro cũng chia thành cấu trúc (dài hạn) và chu kỳ (ngắn hạn).</p>
+
+          <h3>Rủi ro cấu trúc (dài hạn)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Rủi ro</th>
+                  <th>Ai bị</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Chuyển dịch năng lượng xanh (EV, solar, wind)</td>
+                  <td>Toàn ngành dài hạn</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mỏ cũ cạn dần, mỏ mới không đủ bù</td>
+                  <td>PVD, PVS, GAS</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Shale oil Mỹ tạo trần giá dầu ~$80-90</td>
+                  <td>Upstream</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Phụ thuộc PVN - 1 quyết định có thể thay đổi tất cả</td>
+                  <td>Toàn ngành</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Rủi ro chu kỳ (ngắn hạn)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Rủi ro</th>
+                  <th>Ảnh hưởng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5</td>
+                  <td>OPEC+ bất đồng → tăng sản lượng → giá dầu giảm</td>
+                  <td>Upstream</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Suy thoái toàn cầu → nhu cầu dầu giảm</td>
+                  <td>Toàn ngành</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Giá dầu giảm mạnh → PVN cắt CAPEX</td>
+                  <td>PVD, PVS mất việc</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Crack spread thu hẹp</td>
+                  <td>BSR</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Trung Quốc mở xuất khẩu urê → giá urê giảm</td>
+                  <td>DPM, DCM</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Bảo trì nhà máy (BSR, DPM) → mất sản lượng 1-2 quý</td>
+                  <td>BSR, DPM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Rủi ro lớn nhất</div>
+            <p>Rủi ro dài hạn lớn nhất là <strong>chuyển dịch năng lượng xanh</strong>. Trong 10-20 năm tới, xe điện, năng lượng mặt trời, gió sẽ giảm dần nhu cầu dầu mỏ. Đây là rủi ro cần tính khi đầu tư dài hạn vào ngành dầu khí.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('4.4'); scrollToSection('lesson-4-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 4.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-4-5">
+          <h2>4.5 Câu hỏi vĩ mô cần trả lời</h2>
+
+          <p>Trước khi đầu tư vào cổ phiếu dầu khí, hãy trả lời 6 câu hỏi vĩ mô này. Nếu không trả lời được, bạn chưa sẵn sàng đầu tư.</p>
+
+          <h3>6 câu hỏi bắt buộc</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>1. Giá dầu đang ở đâu và xu hướng? OPEC+ đang làm gì?
+   → Trả lời: Giá dầu $XX, xu hướng tăng/giảm/đi ngang
+   → OPEC+ vừa quyết định cắt/tăng/giữ nguyên sản lượng
+
+2. PVN có thay đổi kế hoạch CAPEX không?
+   → Trả lời: CAPEX năm nay tăng/giảm XX% so với năm trước
+   → Các dự án lớn đang được đẩy nhanh/hoãn/hủy
+
+3. Crack spread đang mở rộng hay thu hẹp? (cho BSR)
+   → Trả lời: Crack spread hiện tại $XX/thùng, tăng/giảm so tháng trước
+
+4. Giá urê thế giới xu hướng? Trung Quốc có hạn chế xuất khẩu? (cho DPM/DCM)
+   → Trả lời: Giá urê $XXX/tấn, xu hướng tăng/giảm
+   → Trung Quốc đang hạn chế/mở cửa xuất khẩu
+
+5. Có dự án mới nào sắp vận hành? (LNG, mỏ mới)
+   → Trả lời: Dự án XXX dự kiến vận hành Q/năm
+   → Ai hưởng lợi: GAS/PVS/PVD
+
+6. Có bảo trì nhà máy nào trong quý? (BSR, DPM)
+   → Trả lời: BSR/DPM sẽ bảo trì từ tháng X đến tháng Y
+   → Sản lượng giảm XX% trong thời gian bảo trì</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Nguồn thông tin</div>
+            <p>Trả lời các câu hỏi này qua: <a href="https://oilprice.com" target="_blank">oilprice.com</a> (giá dầu), <a href="https://www.opec.org" target="_blank">OPEC</a> (quyết định sản lượng), <a href="https://www.pvn.vn" target="_blank">PVN</a> (kế hoạch CAPEX), <a href="https://cafef.vn" target="_blank">CafeF</a> (tin DN), <a href="https://www.indexmundi.com" target="_blank">Index Mundi</a> (giá urê).</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://www.eia.gov" target="_blank" rel="noopener">eia.gov</a> - Cơ quan Thông tin Năng lượng Mỹ</li>
+            <li><a href="https://www.iea.org" target="_blank" rel="noopener">iea.org</a> - Cơ quan Năng lượng Quốc tế</li>
+            <li><a href="https://www.opec.org" target="_blank" rel="noopener">opec.org</a> - OPEC</li>
+            <li><a href="https://tradingeconomics.com" target="_blank" rel="noopener">tradingeconomics.com</a> - Dữ liệu kinh tế vĩ mô</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('4.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 4</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer4-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-3-cycle.html" class="btn btn-secondary">← Lớp 3: Hiểu chu kỳ</a>
+          <a href="layer-5-valuation.html" class="btn btn-primary">Lớp 5: Định giá →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer4', 'layer4-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 0: Kiến thức Chứng khoán Cơ bản | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo">Oil &amp; <span>Gas</span></span>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 0: Kiến thức CK cơ bản</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>📚 Lớp 0: Kiến thức Chứng khoán Cơ bản</h1>
+          <div class="lesson-meta">
+            <span>⏱ ~3 giờ</span>
+            <span>·</span>
+            <span>4 bài học</span>
+            <span>·</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khoá bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="0.1" onclick="scrollToSection('lesson-0-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">0.1 — Chứng khoán là gì? Thị trường hoạt động như thế nào?</div>
+              </div>
+              <div class="checklist-item" data-lesson="0.2" onclick="scrollToSection('lesson-0-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">0.2 — Đọc hiểu Báo cáo Tài chính</div>
+              </div>
+              <div class="checklist-item" data-lesson="0.3" onclick="scrollToSection('lesson-0-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">0.3 — Các Chỉ số Tài chính Quan trọng</div>
+              </div>
+              <div class="checklist-item" data-lesson="0.4" onclick="scrollToSection('lesson-0-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">0.4 — Cách đặt lệnh Mua/Bán</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 0.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-0-1">
+          <h2>0.1 Chứng khoán là gì? Thị trường hoạt động như thế nào?</h2>
+
+          <h3>Các loại chứng khoán cơ bản</h3>
+          <p>Chứng khoán là giấy tờ có giá, đại diện cho quyền sở hữu hoặc quyền đòi nợ đối với một tổ chức. Có ba loại chính:</p>
+          <ul>
+            <li><strong>Cổ phiếu (Stock/Share):</strong> Đại diện quyền sở hữu một phần công ty. Khi công ty làm ăn tốt, cổ phiếu tăng giá và có thể nhận cổ tức. Khi thua lỗ, cổ phiếu giảm giá.</li>
+            <li><strong>Trái phiếu (Bond):</strong> Là công cụ vay nợ — nhà đầu tư cho công ty hoặc chính phủ vay tiền, nhận lãi suất cố định định kỳ, và được hoàn trả gốc khi đáo hạn.</li>
+            <li><strong>Chứng chỉ quỹ (Fund Certificate):</strong> Đơn vị sở hữu trong một quỹ đầu tư — quỹ quản lý danh mục đa dạng thay bạn. Phù hợp với nhà đầu tư không có nhiều thời gian nghiên cứu.</li>
+          </ul>
+
+          <h3>Ba sàn chứng khoán Việt Nam</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sàn</th>
+                  <th>Tên đầy đủ</th>
+                  <th>Đặc điểm</th>
+                  <th>Ví dụ mã CK</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>HOSE</strong></td>
+                  <td>Sở GDCK TP. Hồ Chí Minh</td>
+                  <td>Blue-chip, vốn hóa lớn, thanh khoản cao</td>
+                  <td>GAS, VNM, VIC, PVD</td>
+                </tr>
+                <tr>
+                  <td><strong>HNX</strong></td>
+                  <td>Sở GDCK Hà Nội</td>
+                  <td>Vừa và nhỏ, tiêu chí niêm yết thấp hơn</td>
+                  <td>PVS, PVC, PGS</td>
+                </tr>
+                <tr>
+                  <td><strong>UPCOM</strong></td>
+                  <td>Thị trường UPCoM</td>
+                  <td>Chưa niêm yết chính thức, rủi ro cao hơn</td>
+                  <td>BSR, OIL, PFL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Phiên giao dịch</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Phiên</th>
+                  <th>Thời gian</th>
+                  <th>Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sáng</td>
+                  <td>9:00 – 11:30</td>
+                  <td>ATO lúc 9:00, khớp liên tục sau đó</td>
+                </tr>
+                <tr>
+                  <td>Nghỉ trưa</td>
+                  <td>11:30 – 13:00</td>
+                  <td>Không giao dịch</td>
+                </tr>
+                <tr>
+                  <td>Chiều</td>
+                  <td>13:00 – 14:45</td>
+                  <td>Khớp liên tục</td>
+                </tr>
+                <tr>
+                  <td>Đóng cửa</td>
+                  <td>14:45 – 15:00</td>
+                  <td>ATC, xác định giá đóng cửa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">Cổ phiếu dầu khí giao dịch ở đâu?</div>
+            <p>Hầu hết cổ phiếu dầu khí lớn niêm yết trên <strong>HOSE</strong> (GAS, PVD, BSR) và <strong>HNX</strong> (PVS, PVC). Một số công ty con của PVN đang ở <strong>UPCOM</strong> (OIL, PFL, PJT). Khi nghiên cứu cổ phiếu dầu khí, cần biết sàn giao dịch để nắm biên độ dao động áp dụng.</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://www.hsx.vn" target="_blank" rel="noopener">hsx.vn</a> — Sở GDCK TP.HCM (HOSE)</li>
+            <li><a href="https://www.hnx.vn" target="_blank" rel="noopener">hnx.vn</a> — Sở GDCK Hà Nội (HNX + UPCOM)</li>
+            <li><a href="https://cafef.vn" target="_blank" rel="noopener">cafef.vn</a> — Tin tức và báo giá chứng khoán</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('0.1'); scrollToSection('lesson-0-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 0.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-0-2">
+          <h2>0.2 Đọc hiểu Báo cáo Tài chính</h2>
+
+          <p>Báo cáo tài chính (BCTC) là "bản sức khỏe" của doanh nghiệp. Nhà đầu tư chứng khoán <em>phải</em> biết đọc ba báo cáo chính.</p>
+
+          <h3>Ba báo cáo tài chính cốt lõi</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Báo cáo</th>
+                  <th>Tên tiếng Anh</th>
+                  <th>Trả lời câu hỏi gì?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Bảng CĐKT</strong></td>
+                  <td>Balance Sheet</td>
+                  <td>Công ty đang có gì và nợ ai tại một thời điểm?</td>
+                </tr>
+                <tr>
+                  <td><strong>KQKD</strong></td>
+                  <td>Income Statement</td>
+                  <td>Công ty kiếm được bao nhiêu tiền trong kỳ?</td>
+                </tr>
+                <tr>
+                  <td><strong>LCTT</strong></td>
+                  <td>Cash Flow Statement</td>
+                  <td>Tiền mặt thực sự đi về đâu trong kỳ?</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Phương trình kế toán cơ bản</h3>
+          <div class="info-box success">
+            <div class="info-box-title">Công thức nền tảng</div>
+            <p style="font-size: var(--text-lg); font-weight: 700; font-family: var(--font-mono); text-align: center; padding: var(--space-sm) 0;">
+              TÀI SẢN = NỢ PHẢI TRẢ + VỐN CHỦ SỞ HỮU
+            </p>
+            <p>Mọi số liệu trong Bảng CĐKT đều phải cân bằng theo phương trình này. Nếu tổng tài sản = 1.000 tỷ, nợ = 600 tỷ thì vốn chủ sở hữu = 400 tỷ.</p>
+          </div>
+
+          <h3>Cấu trúc Báo cáo KQKD (Income Statement)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Doanh thu thuần (Net Revenue)
+  - Giá vốn hàng bán (COGS)
+─────────────────────────────────
+= Lợi nhuận gộp (Gross Profit)
+
+  - Chi phí bán hàng
+  - Chi phí quản lý doanh nghiệp
+─────────────────────────────────
+= Lợi nhuận từ hoạt động KD (EBIT)
+
+  +/- Thu nhập / Chi phí tài chính
+─────────────────────────────────
+= Lợi nhuận trước thuế (EBT)
+
+  - Thuế TNDN
+─────────────────────────────────
+= Lợi nhuận sau thuế (Net Income)</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Lưu ý quan trọng</div>
+            <p><strong>Lợi nhuận cao ≠ Tiền mặt nhiều!</strong> Một công ty có thể báo lãi lớn nhưng thực tế thiếu tiền mặt do bán chịu nhiều (nợ phải thu lớn) hoặc hàng tồn kho tích tụ. Luôn đọc LCTT song song với KQKD để hiểu chất lượng lợi nhuận thực sự.</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://finance.vietstock.vn" target="_blank" rel="noopener">finance.vietstock.vn</a> — Tải BCTC các công ty niêm yết</li>
+            <li><a href="https://cafef.vn" target="_blank" rel="noopener">cafef.vn</a> — Phân tích tài chính cổ phiếu</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('0.2'); scrollToSection('lesson-0-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 0.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-0-3">
+          <h2>0.3 Các Chỉ số Tài chính Quan trọng</h2>
+
+          <p>Chỉ số tài chính giúp so sánh nhanh giữa các cổ phiếu và đánh giá định giá. Dưới đây là các chỉ số cần nắm vững trước khi phân tích cổ phiếu dầu khí.</p>
+
+          <h3>Nhóm Định giá (Valuation)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Chỉ số</th>
+                  <th>Công thức</th>
+                  <th>Ý nghĩa</th>
+                  <th>Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>P/E</strong></td>
+                  <td>Giá / EPS</td>
+                  <td>Trả bao nhiêu đồng cho 1 đồng lợi nhuận</td>
+                  <td>Thấp = rẻ (cùng ngành)</td>
+                </tr>
+                <tr>
+                  <td><strong>P/B</strong></td>
+                  <td>Giá / BVPS</td>
+                  <td>Trả bao nhiêu so với giá trị sổ sách</td>
+                  <td>P/B &lt; 1: có thể đang rẻ</td>
+                </tr>
+                <tr>
+                  <td><strong>EV/EBITDA</strong></td>
+                  <td>Enterprise Value / EBITDA</td>
+                  <td>Định giá toàn doanh nghiệp bao gồm nợ</td>
+                  <td>Tốt hơn P/E với ngành vốn nặng</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Nhóm Hiệu quả (Profitability)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Chỉ số</th>
+                  <th>Công thức</th>
+                  <th>Ý nghĩa</th>
+                  <th>Mức tốt (tham khảo)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ROE</strong></td>
+                  <td>LNST / Vốn CSH bình quân</td>
+                  <td>Hiệu quả sử dụng vốn cổ đông</td>
+                  <td>&gt; 15%</td>
+                </tr>
+                <tr>
+                  <td><strong>ROA</strong></td>
+                  <td>LNST / Tổng tài sản bình quân</td>
+                  <td>Hiệu quả sử dụng tài sản</td>
+                  <td>&gt; 5%</td>
+                </tr>
+                <tr>
+                  <td><strong>Biên LN gộp</strong></td>
+                  <td>Lãi gộp / Doanh thu</td>
+                  <td>Khả năng sinh lời từ hoạt động cốt lõi</td>
+                  <td>Tùy ngành</td>
+                </tr>
+                <tr>
+                  <td><strong>Biên LN ròng</strong></td>
+                  <td>LNST / Doanh thu</td>
+                  <td>Bao nhiêu % doanh thu thành lợi nhuận</td>
+                  <td>Tùy ngành</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Nhóm Cổ tức (Dividend)</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Chỉ số</th>
+                  <th>Công thức</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Dividend Yield</strong></td>
+                  <td>Cổ tức / Giá cổ phiếu</td>
+                  <td>Tỷ lệ lợi nhuận từ cổ tức so với giá mua</td>
+                </tr>
+                <tr>
+                  <td><strong>Payout Ratio</strong></td>
+                  <td>Cổ tức / EPS</td>
+                  <td>% lợi nhuận được chia cổ tức</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">P/E ngành chu kỳ — Phản trực giác!</div>
+            <p>Với cổ phiếu ngành chu kỳ như dầu khí, <strong>P/E thấp có thể là tín hiệu đỉnh</strong> (lợi nhuận đang ở đỉnh chu kỳ), và <strong>P/E cao hoặc âm có thể là đáy</strong> (lợi nhuận tạm thời thấp). Không dùng P/E đơn độc — kết hợp với EV/EBITDA và phân tích chu kỳ ngành.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('0.3'); scrollToSection('lesson-0-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 0.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-0-4">
+          <h2>0.4 Cách đặt lệnh Mua/Bán</h2>
+
+          <p>Hiểu các loại lệnh giúp bạn kiểm soát giá mua/bán và tránh rủi ro thực thi không mong muốn.</p>
+
+          <h3>Các loại lệnh giao dịch</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Loại lệnh</th>
+                  <th>Tên đầy đủ</th>
+                  <th>Đặc điểm</th>
+                  <th>Dùng khi nào</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>LO</strong></td>
+                  <td>Limit Order</td>
+                  <td>Đặt giá cụ thể, chờ khớp</td>
+                  <td>Muốn kiểm soát giá mua/bán</td>
+                </tr>
+                <tr>
+                  <td><strong>MP</strong></td>
+                  <td>Market Price</td>
+                  <td>Khớp tại giá thị trường tốt nhất ngay lập tức</td>
+                  <td>Cần mua/bán gấp, chấp nhận giá thị trường</td>
+                </tr>
+                <tr>
+                  <td><strong>ATO</strong></td>
+                  <td>At The Open</td>
+                  <td>Khớp tại giá mở cửa (9:00)</td>
+                  <td>Đặt trước phiên, hưởng giá mở cửa</td>
+                </tr>
+                <tr>
+                  <td><strong>ATC</strong></td>
+                  <td>At The Close</td>
+                  <td>Khớp tại giá đóng cửa (14:45–15:00)</td>
+                  <td>Đặt cuối phiên, hưởng giá đóng cửa chính thức</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Biên độ dao động giá</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sàn</th>
+                  <th>Biên độ</th>
+                  <th>Ví dụ (cổ phiếu giá 50.000đ)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>HOSE</strong></td>
+                  <td>±7%</td>
+                  <td>Sàn: 46.500đ — Trần: 53.500đ</td>
+                </tr>
+                <tr>
+                  <td><strong>HNX</strong></td>
+                  <td>±10%</td>
+                  <td>Sàn: 45.000đ — Trần: 55.000đ</td>
+                </tr>
+                <tr>
+                  <td><strong>UPCOM</strong></td>
+                  <td>±15%</td>
+                  <td>Sàn: 42.500đ — Trần: 57.500đ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Đơn vị giao dịch</h3>
+          <p>Tại HOSE và HNX, giao dịch theo <strong>lô chẵn 100 cổ phiếu</strong>. Bạn không thể mua lẻ 50 cổ phiếu trên sàn chính — phải đặt bội số của 100 (100, 200, 500, 1.000...). Trên UPCOM, lô giao dịch là 100 cổ phiếu nhưng có thể giao dịch lô lẻ qua thỏa thuận.</p>
+
+          <div class="info-box success">
+            <div class="info-box-title">Mẹo cho người mới</div>
+            <p>Bắt đầu với <strong>lệnh LO</strong> — bạn kiểm soát hoàn toàn giá mua/bán, lệnh chỉ khớp khi thị trường đạt giá bạn muốn. Tránh dùng MP khi thanh khoản thấp vì có thể bị trượt giá mạnh (slippage).</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('0.4'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>📝 Quiz: Kiểm tra kiến thức Lớp 0</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer0-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="../index.html" class="btn btn-secondary">← Dashboard</a>
+          <a href="layer-1-industry.html" class="btn btn-primary">Lớp 1: Hiểu ngành →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // ── Initialize quiz ────────────────────────────────────────
+    Quiz.init('layer0', 'layer0-quiz', 5);
+
+    // ── Update checklist UI ────────────────────────────────────
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // ── Toggle lesson completion ───────────────────────────────
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // ── Smooth scroll to section ───────────────────────────────
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

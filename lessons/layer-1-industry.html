@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 1: Hiểu ngành Dầu khí | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 1: Hiểu ngành Dầu khí</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 1: Hiểu ngành Dầu khí</h1>
+          <div class="lesson-meta">
+            <span>~4 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="1.1" onclick="scrollToSection('lesson-1-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">1.1 - Chuỗi giá trị dầu khí</div>
+              </div>
+              <div class="checklist-item" data-lesson="1.2" onclick="scrollToSection('lesson-1-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">1.2 - Phân loại doanh nghiệp</div>
+              </div>
+              <div class="checklist-item" data-lesson="1.3" onclick="scrollToSection('lesson-1-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">1.3 - Ai quyết định luật chơi</div>
+              </div>
+              <div class="checklist-item" data-lesson="1.4" onclick="scrollToSection('lesson-1-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">1.4 - Đặc thù ngành Việt Nam</div>
+              </div>
+              <div class="checklist-item" data-lesson="1.5" onclick="scrollToSection('lesson-1-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">1.5 - Mùa vụ trong ngành dầu khí</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 1.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-1-1">
+          <h2>1.1 Chuỗi giá trị dầu khí</h2>
+
+          <p>Ngành dầu khí được chia thành 3 phân khúc chính theo chuỗi giá trị: <strong>Thượng nguồn (Upstream)</strong>, <strong>Trung nguồn (Midstream)</strong>, và <strong>Hạ nguồn (Downstream)</strong>. Hiểu rõ chuỗi giá trị giúp bạn xác định doanh nghiệp nào hưởng lợi khi giá dầu tăng, và doanh nghiệp nào bị ảnh hưởng ngược lại.</p>
+
+          <h3>Sơ đồ chuỗi giá trị</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>THƯỢNG NGUỒN (Upstream) - Thăm dò & Khai thác
+    → Tìm mỏ dầu/khí → Khoan → Khai thác dầu thô / khí tự nhiên
+    → DN: PVD (khoan), PVS (dịch vụ kỹ thuật), PVN (tập đoàn mẹ)
+
+TRUNG NGUỒN (Midstream) - Vận chuyển & Lưu trữ
+    → Vận chuyển dầu thô/khí bằng đường ống, tàu
+    → DN: PVT (vận tải), GAS (phân phối khí)
+
+HẠ NGUỒN (Downstream) - Chế biến & Phân phối
+    → Lọc dầu → Xăng, dầu diesel, nhựa, hóa chất
+    → Phân phối xăng dầu bán lẻ
+    → DN: BSR (lọc dầu Dung Quất), PLX (Petrolimex - bán lẻ xăng dầu), OIL (PVOil)
+
+DỊCH VỤ PHỤ TRỢ
+    → Xây lắp, bảo trì, cung cấp thiết bị cho toàn chuỗi
+    → DN: PVS (dịch vụ kỹ thuật), PVC (xây lắp), PVI (bảo hiểm dầu khí)
+
+PHÂN BÓN & HÓA CHẤT (Downstream mở rộng)
+    → Khí tự nhiên → Đạm, nhựa, hóa chất
+    → DN: DPM (Đạm Phú Mỹ), DCM (Đạm Cà Mau), CSV (phân bón)</code></pre>
+
+          <div class="info-box info">
+            <div class="info-box-title">Tại sao cần hiểu chuỗi giá trị?</div>
+            <p>Khi giá dầu <strong>tăng</strong>: Upstream hưởng lợi (bán dầu được giá cao), nhưng Downstream có thể chịu thiệt (mua nguyên liệu đắt). Ngược lại khi giá dầu <strong>giảm</strong>: Upstream mất lợi nhuận, nhưng Downstream có thể hưởng lợi (mua nguyên liệu rẻ). Đây là nguyên tắc cơ bản nhất để phân tích cổ phiếu dầu khí.</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://www.pvn.vn" target="_blank" rel="noopener">pvn.vn</a> - Tập đoàn Dầu khí Quốc gia Việt Nam</li>
+            <li><a href="https://www.eia.gov" target="_blank" rel="noopener">eia.gov</a> - Cơ quan Thông tin Năng lượng Mỹ</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('1.1'); scrollToSection('lesson-1-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 1.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-1-2">
+          <h2>1.2 Phân loại doanh nghiệp</h2>
+
+          <p>Mỗi phân khúc trong chuỗi dầu khí có đặc thù riêng về nguồn doanh thu, rủi ro và yếu tố ảnh hưởng. Hiểu rõ phân loại giúp bạn đánh giá đúng từng cổ phiếu.</p>
+
+          <h3>Bảng phân loại doanh nghiệp dầu khí Việt Nam</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Phân khúc</th>
+                  <th>DN tiêu biểu</th>
+                  <th>Sản phẩm/Dịch vụ</th>
+                  <th>Đặc thù</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Khai thác</strong></td>
+                  <td>PVD, PVN</td>
+                  <td>Khoan, khai thác dầu thô/khí</td>
+                  <td>Phụ thuộc 100% giá dầu + sản lượng khai thác</td>
+                </tr>
+                <tr>
+                  <td><strong>Dịch vụ kỹ thuật</strong></td>
+                  <td>PVS</td>
+                  <td>Xây lắp giàn khoan, bảo trì, FSO/FPSO</td>
+                  <td>Phụ thuộc đầu tư thăm dò (CAPEX ngành)</td>
+                </tr>
+                <tr>
+                  <td><strong>Phân phối khí</strong></td>
+                  <td>GAS</td>
+                  <td>Vận chuyển & bán khí cho nhà máy điện, phân bón</td>
+                  <td>Lợi nhuận ổn định hơn, hợp đồng dài hạn</td>
+                </tr>
+                <tr>
+                  <td><strong>Lọc dầu</strong></td>
+                  <td>BSR</td>
+                  <td>Lọc dầu thô → xăng, dầu diesel, hóa chất</td>
+                  <td>Phụ thuộc crack spread (chênh lệch giá dầu thô vs sản phẩm)</td>
+                </tr>
+                <tr>
+                  <td><strong>Bán lẻ xăng dầu</strong></td>
+                  <td>PLX, OIL</td>
+                  <td>Bán xăng dầu qua hệ thống cây xăng</td>
+                  <td>Biên mỏng, phụ thuộc chính sách giá (Bộ Công Thương)</td>
+                </tr>
+                <tr>
+                  <td><strong>Phân bón từ khí</strong></td>
+                  <td>DPM, DCM</td>
+                  <td>Đạm urê từ khí tự nhiên</td>
+                  <td>Phụ thuộc giá khí đầu vào + giá phân bón thế giới</td>
+                </tr>
+                <tr>
+                  <td><strong>Vận tải dầu khí</strong></td>
+                  <td>PVT</td>
+                  <td>Vận chuyển dầu, khí, hóa chất bằng tàu</td>
+                  <td>Phụ thuộc giá cước vận tải, sản lượng khai thác</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Lưu ý quan trọng</div>
+            <p><strong>KHÔNG đánh giá tất cả DN dầu khí giống nhau!</strong> PVD (khai thác) và BSR (lọc dầu) có thể đi ngược chiều nhau khi giá dầu biến động. Khi phân tích, luôn xác định DN thuộc phân khúc nào trước.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('1.2'); scrollToSection('lesson-1-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 1.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-1-3">
+          <h2>1.3 Ai quyết định luật chơi</h2>
+
+          <p>Ngành dầu khí bị chi phối bởi một số "người chơi" lớn. Hiểu rõ ai quyết định luật chơi giúp bạn dự đoán xu hướng giá và hành động của các doanh nghiệp.</p>
+
+          <h3>Các tác nhân chính</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Giá dầu thế giới (Brent, WTI):
+→ QUYẾT ĐỊNH SỐ 1 - ảnh hưởng toàn bộ chuỗi
+→ Dầu lên → upstream lời, downstream có thể lỗ (nhập đắt)
+→ Dầu xuống → upstream lỗ, downstream có thể lời (nhập rẻ)
+
+PVN (Tập đoàn Dầu khí Quốc gia):
+→ Công ty mẹ của hầu hết DN dầu khí niêm yết
+→ Quyết định kế hoạch thăm dò, đầu tư CAPEX
+→ Phân bổ sản lượng khai thác, hợp đồng dịch vụ
+
+Bộ Công Thương:
+→ Quyết định giá bán lẻ xăng dầu (điều chỉnh mỗi 10-15 ngày)
+→ PLX, OIL KHÔNG được tự quyết giá bán
+
+OPEC+:
+→ Quyết định sản lượng dầu thế giới → ảnh hưởng giá dầu
+→ VN không thuộc OPEC nhưng chịu ảnh hưởng giá</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Mẹo theo dõi</div>
+            <p>Để nắm bắt xu hướng ngành dầu khí, hãy theo dõi: <strong>(1)</strong> Giá dầu Brent hàng ngày, <strong>(2)</strong> Các cuộc họp OPEC+ (thường mỗi tháng hoặc quý), <strong>(3)</strong> Kế hoạch CAPEX của PVN (công bố đầu năm), <strong>(4)</strong> Điều chỉnh giá xăng của Bộ Công Thương (mỗi 10-15 ngày).</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://oilprice.com" target="_blank" rel="noopener">oilprice.com</a> - Giá dầu thế giới cập nhật</li>
+            <li><a href="https://www.opec.org" target="_blank" rel="noopener">opec.org</a> - Tổ chức các nước xuất khẩu dầu mỏ</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('1.3'); scrollToSection('lesson-1-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 1.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-1-4">
+          <h2>1.4 Đặc thù ngành Việt Nam</h2>
+
+          <p>Ngành dầu khí Việt Nam có những đặc thù riêng mà nhà đầu tư cần nắm rõ để tránh hiểu sai về tiềm năng và rủi ro.</p>
+
+          <h3>Những điểm đặc biệt</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>- VN là nước SẢN XUẤT dầu nhưng NHẬP KHẨU ròng sản phẩm xăng dầu
+  (xuất dầu thô, nhập xăng dầu thành phẩm)
+
+- Sản lượng khai thác dầu thô giảm dần (~8-10 triệu tấn/năm, từ đỉnh 20 triệu)
+  → Mỏ cũ cạn dần, mỏ mới chưa đủ bù
+
+- Khí tự nhiên đang tăng dần vai trò (điện khí, phân bón, hóa chất)
+
+- Dự án LNG nhập khẩu đang triển khai (Thị Vải, Hải Lăng)
+  → Chuyển từ khai thác nội địa sang nhập LNG
+
+- Chuyển dịch năng lượng xanh → dài hạn giảm phụ thuộc nhiên liệu hóa thạch
+  nhưng trung hạn 5-10 năm dầu khí vẫn là trụ cột</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Nghịch lý Việt Nam</div>
+            <p>Việt Nam <strong>xuất khẩu dầu thô</strong> nhưng lại <strong>nhập khẩu xăng dầu thành phẩm</strong>. Lý do: công suất lọc dầu nội địa (chủ yếu là Dung Quất - BSR) chưa đủ đáp ứng nhu cầu. Điều này có nghĩa khi giá dầu tăng, VN hưởng lợi từ xuất khẩu dầu thô, nhưng lại chịu thiệt từ nhập khẩu xăng dầu.</p>
+          </div>
+
+          <h3>Xu hướng dài hạn</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Xu hướng</th>
+                  <th>Ảnh hưởng</th>
+                  <th>DN hưởng lợi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mỏ cũ cạn, mỏ mới chậm triển khai</td>
+                  <td>Sản lượng khai thác giảm</td>
+                  <td>Các DN dịch vụ bảo trì (PVS)</td>
+                </tr>
+                <tr>
+                  <td>Điện khí tăng tỷ trọng</td>
+                  <td>Nhu cầu khí tăng</td>
+                  <td>GAS, PVT</td>
+                </tr>
+                <tr>
+                  <td>LNG nhập khẩu</td>
+                  <td>Giảm phụ thuộc khí nội địa</td>
+                  <td>GAS (vận hành terminal), PVS (xây lắp)</td>
+                </tr>
+                <tr>
+                  <td>Năng lượng tái tạo</td>
+                  <td>Dài hạn giảm nhu cầu dầu khí</td>
+                  <td>Rủi ro cho toàn ngành</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('1.4'); scrollToSection('lesson-1-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 1.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-1-5">
+          <h2>1.5 Mùa vụ trong ngành dầu khí</h2>
+
+          <p>Giống như nhiều ngành khác, dầu khí cũng có tính mùa vụ. Tuy nhiên, <strong>mùa vụ ít quan trọng hơn biến động giá dầu</strong> - giá dầu thay đổi 20% có thể xóa hết ảnh hưởng mùa vụ.</p>
+
+          <h3>Bảng mùa vụ theo quý</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Quý</th>
+                  <th>Upstream (PVD, PVS)</th>
+                  <th>Downstream (BSR, PLX)</th>
+                  <th>Phân bón (DPM, DCM)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Q1</strong></td>
+                  <td>Trung bình (sau Tết chậm)</td>
+                  <td>Cao (Tết, nhu cầu đi lại)</td>
+                  <td>Thấp (chưa vào vụ)</td>
+                </tr>
+                <tr>
+                  <td><strong>Q2</strong></td>
+                  <td>Cao (mùa khoan)</td>
+                  <td>Trung bình</td>
+                  <td>Cao (vụ Hè Thu, bón phân)</td>
+                </tr>
+                <tr>
+                  <td><strong>Q3</strong></td>
+                  <td>Cao (mùa khoan)</td>
+                  <td>Trung bình</td>
+                  <td>Cao (tiếp tục vụ)</td>
+                </tr>
+                <tr>
+                  <td><strong>Q4</strong></td>
+                  <td>Trung bình - Cao</td>
+                  <td>Cao (cuối năm, nhu cầu vận tải)</td>
+                  <td>Thấp (hết vụ)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box important">
+            <div class="info-box-title">Lưu ý quan trọng</div>
+            <p>Mùa vụ của dầu khí <strong>PHỤ THUỘC GIÁ DẦU nhiều hơn mùa vụ</strong>. Giá dầu biến động 20% có thể xóa hết ảnh hưởng mùa vụ. Ví dụ: Q2 là mùa khoan tốt cho PVD, nhưng nếu giá dầu giảm 30% trong Q2, PVD vẫn có thể lỗ nặng.</p>
+          </div>
+
+          <h3>Mùa bảo trì nhà máy</h3>
+          <p>BSR (lọc dầu Dung Quất) và DPM, DCM (nhà máy đạm) có lịch bảo trì định kỳ, thường vào:</p>
+          <ul>
+            <li><strong>BSR:</strong> Bảo trì lớn 3-4 năm/lần, kéo dài 1-2 tháng. Trong thời gian này sản lượng giảm mạnh, ảnh hưởng doanh thu 1-2 quý.</li>
+            <li><strong>DPM, DCM:</strong> Bảo trì hàng năm, thường vào Q1 hoặc Q4 (lúc nhu cầu phân bón thấp).</li>
+          </ul>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://cafef.vn/dau-tu-chung-khoan.chn" target="_blank" rel="noopener">cafef.vn</a> - Tin tức BCTC hàng quý</li>
+            <li><a href="https://finance.vietstock.vn" target="_blank" rel="noopener">finance.vietstock.vn</a> - Lịch sử kết quả kinh doanh</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('1.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 1</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer1-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-0-basics.html" class="btn btn-secondary">← Lớp 0: Kiến thức CK</a>
+          <a href="layer-2-metrics.html" class="btn btn-primary">Lớp 2: Đọc số →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer1', 'layer1-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

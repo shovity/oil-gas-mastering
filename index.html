@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oil &amp; Gas Mastering - Học Chứng Khoán Dầu Khí VN</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo">Oil &amp; <span>Gas</span></span>
+      </div>
+
+      <!-- Navigation (populated by JS) -->
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+
+      <!-- Footer with overall progress -->
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content area (populated by JS) -->
+    <main class="main">
+      <div class="content" id="main-content"></div>
+    </main>
+
+  </div>
+
+  <!-- Data & logic scripts -->
+  <script src="quizzes/quiz-data.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

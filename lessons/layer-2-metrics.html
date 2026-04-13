@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 2: Đọc số - Metrics | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 2: Đọc số - Metrics</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 2: Đọc số - Metrics</h1>
+          <div class="lesson-meta">
+            <span>~5 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="2.1" onclick="scrollToSection('lesson-2-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">2.1 - Metrics quan trọng theo tier</div>
+              </div>
+              <div class="checklist-item" data-lesson="2.2" onclick="scrollToSection('lesson-2-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">2.2 - Đọc số Upstream (PVD, PVS)</div>
+              </div>
+              <div class="checklist-item" data-lesson="2.3" onclick="scrollToSection('lesson-2-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">2.3 - Đọc số Downstream (BSR, PLX, DPM)</div>
+              </div>
+              <div class="checklist-item" data-lesson="2.4" onclick="scrollToSection('lesson-2-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">2.4 - Bẫy phổ biến khi đọc BCTC dầu khí</div>
+              </div>
+              <div class="checklist-item" data-lesson="2.5" onclick="scrollToSection('lesson-2-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">2.5 - Checklist đánh giá BCTC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 2.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-2-1">
+          <h2>2.1 Metrics quan trọng theo tier</h2>
+
+          <p>Không phải tất cả các chỉ số đều quan trọng như nhau. Chúng tôi chia thành 3 tier theo mức độ thị trường phản ứng nhanh hay chậm.</p>
+
+          <h3>Tier 1 - Thị trường phản ứng ngay</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Metric</th>
+                  <th>Ý nghĩa</th>
+                  <th>Áp dụng cho</th>
+                  <th>Benchmark</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Giá dầu Brent</strong></td>
+                  <td>Ảnh hưởng toàn ngành</td>
+                  <td>Tất cả</td>
+                  <td>>$70: tốt cho upstream. <$60: xấu cho upstream</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Sản lượng khai thác</strong></td>
+                  <td>Bán được bao nhiêu</td>
+                  <td>PVD, GAS</td>
+                  <td>So kế hoạch PVN giao</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Crack spread</strong></td>
+                  <td>Chênh lệch giá dầu thô vs xăng/diesel</td>
+                  <td>BSR</td>
+                  <td>Cao → BSR lời. Thấp/âm → BSR lỗ</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Giá khí đầu vào</strong></td>
+                  <td>Chi phí nguyên liệu cho phân bón</td>
+                  <td>DPM, DCM</td>
+                  <td>Khí rẻ → biên cao. Khí đắt → ép LN</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>Giá phân bón urê thế giới</strong></td>
+                  <td>Giá bán sản phẩm</td>
+                  <td>DPM, DCM</td>
+                  <td>Cao → LN tăng. Thấp → LN giảm</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Utilization rate nhà máy lọc dầu</strong></td>
+                  <td>Chạy bao nhiêu % công suất</td>
+                  <td>BSR</td>
+                  <td>>90% = tốt. <80% = bảo trì hoặc lỗ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Tier 2 - Quan trọng, phản ứng chậm hơn</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Metric</th>
+                  <th>Ý nghĩa</th>
+                  <th>Áp dụng cho</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>7</td>
+                  <td><strong>Backlog hợp đồng</strong></td>
+                  <td>Giá trị hợp đồng đã ký chưa thực hiện</td>
+                  <td>PVS, PVD</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>CAPEX thăm dò của PVN</strong></td>
+                  <td>PVN đầu tư bao nhiêu cho thăm dò</td>
+                  <td>PVD, PVS</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>Giá cước vận tải (freight rate)</strong></td>
+                  <td>Giá vận chuyển dầu/khí</td>
+                  <td>PVT</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>Biên lọc dầu (GRM)</strong></td>
+                  <td>Lợi nhuận trên mỗi thùng dầu lọc</td>
+                  <td>BSR</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td><strong>Tỷ giá USD/VND</strong></td>
+                  <td>Dầu giao dịch bằng USD</td>
+                  <td>Tất cả</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Tier 3 - Dài hạn</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Metric</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12</td>
+                  <td><strong>Trữ lượng dầu/khí còn lại</strong></td>
+                  <td>Bao lâu nữa mới cạn</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td><strong>Tiến độ dự án LNG</strong></td>
+                  <td>Chuyển dịch từ khai thác → nhập khẩu LNG</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td><strong>Kế hoạch CAPEX PVN 5 năm</strong></td>
+                  <td>Đầu tư thăm dò tăng hay giảm</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td><strong>Chính sách năng lượng tái tạo</strong></td>
+                  <td>Dài hạn thay thế nhiên liệu hóa thạch</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('2.1'); scrollToSection('lesson-2-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 2.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-2-2">
+          <h2>2.2 Đọc số Upstream (PVD, PVS)</h2>
+
+          <p>Upstream là phân khúc nhạy cảm nhất với giá dầu. Khi phân tích PVD, PVS, bạn cần tập trung vào 3 yếu tố chính.</p>
+
+          <h3>Công thức cốt lõi</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>QUAN TRỌNG NHẤT: Giá dầu + Sản lượng + CAPEX PVN
+
+→ Giá dầu tăng → PVN tăng đầu tư thăm dò → PVD, PVS có nhiều hợp đồng
+→ Giá dầu giảm → PVN cắt CAPEX → PVD, PVS mất việc
+
+Check:
+- Giá dầu Brent trung bình trong quý
+- Số giàn khoan hoạt động (rig count)
+- Backlog hợp đồng còn bao nhiêu
+- Sản lượng khai thác vs kế hoạch</code></pre>
+
+          <div class="info-box info">
+            <div class="info-box-title">Backlog là gì?</div>
+            <p><strong>Backlog</strong> = Giá trị hợp đồng đã ký nhưng chưa thực hiện. Đây là chỉ số quan trọng để dự đoán doanh thu tương lai. Backlog cao = doanh thu đảm bảo. Backlog thấp = cần ký thêm hợp đồng mới.</p>
+          </div>
+
+          <h3>Câu hỏi cần trả lời khi đọc BCTC upstream</h3>
+          <ul>
+            <li>Giá dầu Brent trung bình trong quý là bao nhiêu? Tăng hay giảm so quý trước?</li>
+            <li>PVN có tăng hay giảm CAPEX thăm dò?</li>
+            <li>Backlog hiện tại là bao nhiêu? Tăng hay giảm?</li>
+            <li>Có bao nhiêu giàn khoan đang hoạt động? Day rate là bao nhiêu?</li>
+            <li>Sản lượng khai thác đạt bao nhiêu % kế hoạch?</li>
+          </ul>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Cảnh báo</div>
+            <p>Backlog cao nhưng <strong>margin thấp</strong> = Doanh thu cao mà lợi nhuận không tăng tương ứng. Luôn check biên lợi nhuận trên backlog mới, không chỉ nhìn giá trị tuyệt đối.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('2.2'); scrollToSection('lesson-2-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 2.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-2-3">
+          <h2>2.3 Đọc số Downstream (BSR, PLX, DPM)</h2>
+
+          <p>Downstream có nhiều phân khúc nhỏ, mỗi phân khúc đọc số khác nhau. Đây là hướng dẫn chi tiết cho từng loại.</p>
+
+          <h3>Lọc dầu (BSR)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>QUAN TRỌNG NHẤT: Crack spread + Utilization rate
+
+→ Crack spread = Giá xăng/diesel - Giá dầu thô
+→ Cao → BSR lời trên mỗi thùng lọc. Âm → BSR lỗ
+
+Check:
+- Crack spread Singapore (benchmark khu vực)
+- GRM (Gross Refining Margin) - bao nhiêu $/thùng
+- Công suất vận hành (bảo trì → giảm sản lượng → giảm DT)
+- Hàng tồn kho dầu thô: mua giá rẻ → lời. Mua giá đắt rồi dầu giảm → lỗ tồn kho</code></pre>
+
+          <h3>Bán lẻ xăng dầu (PLX, OIL)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>QUAN TRỌNG NHẤT: Chênh lệch giá cơ sở + Tồn kho
+
+→ Bộ Công Thương quyết định giá bán → PLX/OIL không tự quyết
+→ Biên cố định ~300-500đ/lít → LN phụ thuộc SẢN LƯỢNG bán, không phải giá
+
+Check:
+- Sản lượng tiêu thụ (tấn/lít)
+- Lãi/lỗ tồn kho: giá dầu tăng → lãi tồn kho. Giá giảm → lỗ tồn kho
+- Quỹ bình ổn giá: dương hay âm
+- Thị phần: PLX ~48%, OIL ~20%</code></pre>
+
+          <h3>Phân bón (DPM, DCM)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>QUAN TRỌNG NHẤT: Giá phân bón urê thế giới + Giá khí đầu vào
+
+→ Biên LN = Giá bán urê - Giá khí đầu vào
+→ Giá urê tăng + giá khí giảm → biên TĂNG MẠNH
+→ Giá urê giảm + giá khí tăng → biên BỊ NÉN
+
+Check:
+- Giá urê Yuzhnyy (Ukraine) hoặc Trung Đông - benchmark thế giới
+- Giá khí đầu vào PVN cấp (hợp đồng, điều chỉnh theo giá dầu)
+- Sản lượng tiêu thụ nội địa + xuất khẩu
+- Mùa vụ nông nghiệp (vụ Hè Thu, vụ Đông Xuân)</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Mẹo đọc số phân bón</div>
+            <p>Để đánh giá DPM, DCM, hãy so sánh <strong>tốc độ tăng của giá urê</strong> vs <strong>tốc độ tăng của giá khí</strong>. Nếu urê tăng nhanh hơn khí → biên tăng, lợi nhuận tốt. Nếu khí tăng nhanh hơn urê → biên bị ép, lợi nhuận giảm.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('2.3'); scrollToSection('lesson-2-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 2.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-2-4">
+          <h2>2.4 Bẫy phổ biến khi đọc BCTC dầu khí</h2>
+
+          <p>Nhà đầu tư thường mắc nhiều sai lầm khi đọc BCTC dầu khí. Đây là những bẫy phổ biến nhất và cách tránh.</p>
+
+          <h3>Bảng các bẫy BCTC</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Bẫy</th>
+                  <th>Thực tế</th>
+                  <th>Phải làm gì</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>"BSR lãi kỷ lục"</strong></td>
+                  <td>Có thể do lãi tồn kho (mua dầu rẻ, bán xăng giá mới) - 1 lần</td>
+                  <td>Check lãi tồn kho bao nhiêu? Bỏ ra, LN core bao nhiêu?</td>
+                </tr>
+                <tr>
+                  <td><strong>"DPM LN tăng 100%"</strong></td>
+                  <td>Có thể do giá urê thế giới tăng đột biến (chiến tranh, thiên tai) - không bền</td>
+                  <td>Check giá urê có bền không? Hay đang ở đỉnh chu kỳ?</td>
+                </tr>
+                <tr>
+                  <td><strong>"PVD backlog kỷ lục"</strong></td>
+                  <td>Backlog cao nhưng margin thấp → DT cao mà LN không tăng tương ứng</td>
+                  <td>Check biên LN trên backlog mới</td>
+                </tr>
+                <tr>
+                  <td><strong>"PLX DT tăng 30%"</strong></td>
+                  <td>DT tăng vì giá xăng tăng, SẢN LƯỢNG có thể không đổi</td>
+                  <td>Check sản lượng tiêu thụ (tấn), không chỉ DT (tiền)</td>
+                </tr>
+                <tr>
+                  <td><strong>"GAS LN ổn định"</strong></td>
+                  <td>Hợp đồng dài hạn → LN ổn nhưng KHÔNG TĂNG</td>
+                  <td>Đừng kỳ vọng tăng trưởng cao từ GAS</td>
+                </tr>
+                <tr>
+                  <td><strong>"Giá dầu $80 = tốt cho tất cả"</strong></td>
+                  <td>Sai - tốt cho upstream, XẤU cho downstream (PLX, BSR nhập đắt)</td>
+                  <td>Phân biệt rõ upstream vs downstream</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Bẫy lớn nhất: Lãi/Lỗ tồn kho</div>
+            <p><strong>Lãi tồn kho</strong> xảy ra khi công ty mua dầu giá rẻ, sau đó giá dầu tăng, họ bán sản phẩm theo giá mới → lời phần chênh lệch. Đây là khoản lời <strong>1 LẦN</strong>, không lặp lại. Khi đọc BCTC BSR, PLX, luôn tách riêng lãi/lỗ tồn kho để thấy lợi nhuận thật từ hoạt động kinh doanh.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('2.4'); scrollToSection('lesson-2-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 2.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-2-5">
+          <h2>2.5 Checklist đánh giá BCTC dầu khí</h2>
+
+          <p>Đây là checklist 7 bước để đánh giá bất kỳ BCTC dầu khí nào. Áp dụng cho tất cả các DN trong ngành.</p>
+
+          <h3>Quy trình 7 bước</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Bước 1: Xác định phân khúc
+  → Upstream / Lọc dầu / Phân bón / Bán lẻ / Dịch vụ?
+
+Bước 2: Check giá đầu vào + đầu ra
+  → Upstream: giá dầu Brent quý này?
+  → Lọc dầu: crack spread? GRM?
+  → Phân bón: giá urê? Giá khí đầu vào?
+  → Bán lẻ: sản lượng tiêu thụ? Lãi/lỗ tồn kho?
+
+Bước 3: Sản lượng tăng hay giảm?
+  → So kế hoạch PVN giao + so cùng kỳ
+
+Bước 4: Lãi/lỗ tồn kho bao nhiêu?
+  → Đặc biệt quan trọng cho BSR, PLX
+  → Lãi tồn kho = 1 lần, KHÔNG bền
+
+Bước 5: Backlog / Hợp đồng mới?
+  → PVS, PVD: backlog tăng → DT tương lai đảm bảo
+
+Bước 6: CAPEX PVN có thay đổi?
+  → Tăng → tốt cho dịch vụ. Giảm → xấu
+
+Bước 7: Yếu tố vĩ mô?
+  → Giá dầu xu hướng, OPEC+, tỷ giá, nhu cầu toàn cầu</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Template đánh giá nhanh</div>
+            <p>Khi đọc BCTC, hãy trả lời 3 câu hỏi: <strong>(1)</strong> Giá đầu vào/đầu ra thay đổi thế nào so với kỳ trước? <strong>(2)</strong> Sản lượng tăng hay giảm? <strong>(3)</strong> Có yếu tố bất thường nào (lãi/lỗ tồn kho, bảo trì, hợp đồng lớn) không?</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://finance.vietstock.vn" target="_blank" rel="noopener">finance.vietstock.vn</a> - Tải BCTC các công ty niêm yết</li>
+            <li><a href="https://cafef.vn" target="_blank" rel="noopener">cafef.vn</a> - Phân tích tài chính cổ phiếu</li>
+            <li><a href="https://www.eia.gov/petroleum/supply/weekly/" target="_blank" rel="noopener">EIA Weekly Petroleum Status</a> - Dữ liệu tồn kho dầu Mỹ</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('2.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 2</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer2-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-1-industry.html" class="btn btn-secondary">← Lớp 1: Hiểu ngành</a>
+          <a href="layer-3-cycle.html" class="btn btn-primary">Lớp 3: Hiểu chu kỳ →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer2', 'layer2-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

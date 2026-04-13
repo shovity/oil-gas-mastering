@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 6: Tư vấn | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 6: Tư vấn</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 6: Tư vấn</h1>
+          <div class="lesson-meta">
+            <span>~3 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="6.1" onclick="scrollToSection('lesson-6-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">6.1 - Phân biệt các loại rủi ro</div>
+              </div>
+              <div class="checklist-item" data-lesson="6.2" onclick="scrollToSection('lesson-6-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">6.2 - Tư vấn theo profile nhà đầu tư</div>
+              </div>
+              <div class="checklist-item" data-lesson="6.3" onclick="scrollToSection('lesson-6-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">6.3 - Khi nào VÀO (Upstream)</div>
+              </div>
+              <div class="checklist-item" data-lesson="6.4" onclick="scrollToSection('lesson-6-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">6.4 - Khi nào THOÁT (Upstream)</div>
+              </div>
+              <div class="checklist-item" data-lesson="6.5" onclick="scrollToSection('lesson-6-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">6.5 - Ngôn ngữ cho NĐT ít kinh nghiệm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 6.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-6-1">
+          <h2>6.1 Phân biệt các loại rủi ro</h2>
+
+          <p>Không phải mọi tin xấu đều nguy hiểm như nhau. Phân biệt được loại rủi ro giúp bạn quyết định đúng: có nên lo lắng hay không.</p>
+
+          <h3>Bảng phân loại rủi ro</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tình huống</th>
+                  <th>Loại</th>
+                  <th>Phản ứng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Giá dầu giảm 10% trong 1 tháng</td>
+                  <td><strong>Biến động bình thường</strong></td>
+                  <td>Theo dõi OPEC+, chưa cần lo</td>
+                </tr>
+                <tr>
+                  <td>Giá dầu giảm 30% trong 3 tháng</td>
+                  <td><strong>Chu kỳ đảo chiều</strong></td>
+                  <td>Xem xét giảm upstream</td>
+                </tr>
+                <tr>
+                  <td>BSR lỗ 1 quý do bảo trì</td>
+                  <td><strong>Sự kiện (tạm thời)</strong></td>
+                  <td>Bình thường, Q sau sẽ hồi</td>
+                </tr>
+                <tr>
+                  <td>BSR lỗ vì crack spread âm 2 quý</td>
+                  <td><strong>Cấu trúc</strong></td>
+                  <td>Cần đánh giá lại</td>
+                </tr>
+                <tr>
+                  <td>DPM LN giảm vì hết mùa vụ (Q4)</td>
+                  <td><strong>Mùa vụ</strong></td>
+                  <td>Bình thường</td>
+                </tr>
+                <tr>
+                  <td>DPM LN giảm vì giá ure giảm 3 quý</td>
+                  <td><strong>Chu kỳ</strong></td>
+                  <td>Xem giá ure có hồi không</td>
+                </tr>
+                <tr>
+                  <td>PVD mất hợp đồng 1 dự án</td>
+                  <td><strong>Sự kiện</strong></td>
+                  <td>Check backlog còn lại</td>
+                </tr>
+                <tr>
+                  <td>PVN cắt CAPEX thăm dò</td>
+                  <td><strong>Cấu trúc</strong></td>
+                  <td>Xấu cho PVD, PVS trung hạn</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">Cách phân biệt</div>
+            <p><strong>Sự kiện:</strong> Xảy ra 1 lần, ảnh hưởng 1-2 quý (bảo trì, mất 1 hợp đồng). <strong>Mùa vụ:</strong> Lặp lại mỗi năm, dự đoán được. <strong>Chu kỳ:</strong> Kéo dài nhiều quý, liên quan đến giá dầu/ure. <strong>Cấu trúc:</strong> Thay đổi dài hạn, ảnh hưởng đến mô hình kinh doanh.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('6.1'); scrollToSection('lesson-6-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 6.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-6-2">
+          <h2>6.2 Tư vấn theo profile nhà đầu tư</h2>
+
+          <p>Mỗi NĐT có mục tiêu và khả năng chịu rủi ro khác nhau. Tư vấn phải phù hợp với profile của họ.</p>
+
+          <h3>NĐT dài hạn (>1 năm)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Focus: Dự án mới (LNG, mỏ khí), xu hướng năng lượng, CAPEX PVN dài hạn
+
+Ưu tiên:
+- GAS (ổn định + hưởng lợi LNG)
+- PVS (backlog mạnh)
+
+Tránh:
+- PLX (biên mỏng, không tăng trưởng)
+- PVD (quá phụ thuộc giá dầu)
+
+Cổ tức:
+- DPM, DCM nếu yield > 8% trung bình 3 năm</code></pre>
+
+          <h3>NĐT trung hạn (3-12 tháng)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Focus: Chu kỳ giá dầu, quyết định OPEC+, CAPEX PVN
+
+Vào upstream:
+- Giá dầu chạm đáy + OPEC+ cắt giảm + PVN tăng CAPEX
+
+Thoát upstream:
+- Giá dầu phá đỉnh + OPEC+ bất đồng + shale oil tăng
+
+Vào phân bón:
+- Giá ure chạm đáy + TQ hạn chế XK + mùa vụ sắp đến</code></pre>
+
+          <h3>NĐT ngắn hạn (<3 tháng)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Focus: Giá dầu biến động, BCTC sắp ra, bảo trì nhà máy
+
+Catalyst:
+- OPEC+ họp
+- EIA inventory
+- BCTC quý
+- PVN công bố kế hoạch
+
+Lưu ý: Dầu khí BIẾN ĐỘNG MẠNH - không phù hợp NĐT sợ rủi ro</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Cảnh báo cho NĐT mới</div>
+            <p>Cổ phiếu dầu khí <strong>biến động mạnh</strong>, có thể tăng/giảm 30-50% trong vài tháng. Nếu bạn không chấp nhận được mức biến động này, hãy chọn ngành khác ổn định hơn, hoặc chỉ phân bổ một phần nhỏ danh mục vào dầu khí.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('6.2'); scrollToSection('lesson-6-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 6.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-6-3">
+          <h2>6.3 Khi nào VÀO (Upstream)</h2>
+
+          <p>Thời điểm vào là yếu tố quan trọng nhất khi đầu tư cổ phiếu chu kỳ. Đây là các tín hiệu cho thấy đã đến lúc mua upstream.</p>
+
+          <h3>Tín hiệu vào (cần 2-3/6)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Tín hiệu (cần 2-3/6):
+1. Giá dầu chạm đáy + ổn định 2-3 tháng
+2. OPEC+ cắt giảm sản lượng mạnh
+3. Tồn kho dầu thế giới bắt đầu giảm
+4. PVN công bố tăng CAPEX
+5. Rig count chạm đáy
+6. Insider mua CP
+
+Mạnh nhất: Giá dầu ở đáy + OPEC+ siết cung + PVN tăng CAPEX</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Mẹo nhận biết đáy</div>
+            <p>Đáy thường đến khi <strong>tin xấu nhiều nhất</strong> và <strong>không ai muốn mua</strong>. Nếu bạn thấy BCTC xấu, tin tức tiêu cực, nhưng giá dầu đã ngừng giảm và có tín hiệu OPEC+ hành động, đó có thể là đáy. Lúc này cần can đảm mua khi người khác sợ.</p>
+          </div>
+
+          <h3>Checklist trước khi mua</h3>
+          <ul>
+            <li>Giá dầu Brent đã ổn định ít nhất 2 tháng chưa?</li>
+            <li>OPEC+ vừa cắt giảm sản lượng chưa?</li>
+            <li>Tồn kho dầu EIA có xu hướng giảm chưa?</li>
+            <li>PVN có tăng CAPEX chưa?</li>
+            <li>Có insider nào mua cổ phiếu chưa?</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('6.3'); scrollToSection('lesson-6-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 6.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-6-4">
+          <h2>6.4 Khi nào THOÁT (Upstream)</h2>
+
+          <p>Biết khi nào thoát quan trọng không kém biết khi nào vào. Đây là các tín hiệu cho thấy đã đến lúc bán upstream.</p>
+
+          <h3>Tín hiệu thoát (cần 2-3/6)</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Tín hiệu (cần 2-3/6):
+1. Giá dầu > $100 kéo dài → shale oil Mỹ tăng sản xuất
+2. OPEC+ bất đồng, một số nước tăng sản lượng
+3. Tồn kho dầu thế giới tăng 3 tuần liên tiếp
+4. Nhu cầu toàn cầu chậm lại (Trung Quốc, EU yếu)
+5. PVN bắt đầu review/hoãn dự án
+6. Insider bán CP</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Mẹo nhận biết đỉnh</div>
+            <p>Đỉnh thường đến khi <strong>tin tốt nhiều nhất</strong> và <strong>ai cũng muốn mua</strong>. Nếu BCTC đẹp, giá dầu cao, tin tức tích cực, nhưng bạn bắt đầu thấy OPEC+ bất đồng hoặc tồn kho dầu tăng, đó có thể là đỉnh. Lúc này cần chốt lời khi người khác còn hăm hở.</p>
+          </div>
+
+          <h3>Checklist trước khi bán</h3>
+          <ul>
+            <li>Giá dầu đã vượt $90-100 chưa?</li>
+            <li>OPEC+ có dấu hiệu bất đồng chưa?</li>
+            <li>Tồn kho dầu EIA tăng 3 tuần liên tiếp chưa?</li>
+            <li>Trung Quốc hoặc EU có dấu hiệu suy yếu chưa?</li>
+            <li>Có insider nào bán cổ phiếu chưa?</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('6.4'); scrollToSection('lesson-6-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 6.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-6-5">
+          <h2>6.5 Ngôn ngữ cho NĐT ít kinh nghiệm</h2>
+
+          <p>Khi giao tiếp với NĐT ít kinh nghiệm, tránh dùng thuật ngữ chuyên ngành. Đây là cách dịch các thuật ngữ phổ biến.</p>
+
+          <h3>Bảng dịch thuật ngữ</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>KHÔNG dùng: crack spread, GRM, utilization rate, rig count, OPEC+,
+            backlog, CAPEX, upstream, downstream, midstream, shale oil,
+            Henry Hub, TTF, Brent, WTI, normalized P/E
+
+PHẢI dịch:
+- Giá dầu Brent tăng → "Giá dầu thế giới tăng"
+- Crack spread cao → "Chênh lệch giữa giá dầu thô và giá xăng lớn - nhà máy lọc dầu lời nhiều"
+- Upstream hưởng lợi → "Các công ty khai thác và dịch vụ dầu khí được hưởng lợi"
+- OPEC+ cắt giảm → "Các nước xuất khẩu dầu lớn đồng ý bán ít hơn → giá dầu tăng"
+- PVN tăng CAPEX → "Tập đoàn Dầu khí Việt Nam tăng đầu tư thăm dò mỏ mới"
+- Backlog cao → "Công ty đã ký được nhiều hợp đồng, đảm bảo doanh thu thời gian tới"
+- Rig count giảm → "Số giàn khoan hoạt động giảm - ít công ty khoan tìm dầu hơn"
+- Lãi tồn kho → "Công ty mua dầu giá rẻ trước đó, bán xăng giá mới → lời thêm phần chênh lệch, nhưng đây là khoản lời 1 lần"
+- GRM $5/thùng → "Mỗi thùng dầu lọc ra xăng, công ty lời khoảng 5 đô"</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Nguyên tắc giao tiếp</div>
+            <p>Khi giải thích cho NĐT mới, hãy: (1) Tránh thuật ngữ, dùng từ đơn giản, (2) Cho ví dụ cụ thể bằng số, (3) Giải thích TẠI SAO, không chỉ NÊU KẾT QUẢ, (4) Nhấn mạnh rủi ro trước, cơ hội sau.</p>
+          </div>
+
+          <h3>Ví dụ giải thích tốt</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tình huống</th>
+                  <th>Cách giải thích</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BSR lãi kỷ lục</td>
+                  <td>"BSR lãi 2.000 tỷ quý này. Nhưng khoảng 800 tỷ là do mua dầu giá rẻ rồi bán xăng giá mới - đây là khoản lời 1 lần. Quý sau chưa chắc lặp lại."</td>
+                </tr>
+                <tr>
+                  <td>PVD P/E thấp</td>
+                  <td>"PVD đang có vẻ rẻ vì lợi nhuận cao. Nhưng cổ phiếu dầu khí thường rẻ nhất khi lợi nhuận cao nhất - vì sau đó lợi nhuận sẽ giảm. Cẩn thận!"</td>
+                </tr>
+                <tr>
+                  <td>Đáy chu kỳ</td>
+                  <td>"Lợi nhuận PVD giảm 50%, trông rất xấu. Nhưng các nước lớn vừa đồng ý bán ít dầu hơn, giá dầu đã ngừng giảm 2 tháng. Trong quá khứ, đây là lúc cổ phiếu bắt đầu hồi phục."</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('6.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 6</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer6-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-5-valuation.html" class="btn btn-secondary">← Lớp 5: Định giá</a>
+          <a href="layer-7-analyst.html" class="btn btn-primary">Lớp 7: Kỹ năng Analyst →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer6', 'layer6-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 5: Định giá | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 5: Định giá</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 5: Định giá</h1>
+          <div class="lesson-meta">
+            <span>~4 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="5.1" onclick="scrollToSection('lesson-5-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">5.1 - Bẫy P/E với ngành chu kỳ</div>
+              </div>
+              <div class="checklist-item" data-lesson="5.2" onclick="scrollToSection('lesson-5-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">5.2 - Phương pháp định giá theo phân khúc</div>
+              </div>
+              <div class="checklist-item" data-lesson="5.3" onclick="scrollToSection('lesson-5-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">5.3 - Normalized P/E cho ngành chu kỳ</div>
+              </div>
+              <div class="checklist-item" data-lesson="5.4" onclick="scrollToSection('lesson-5-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">5.4 - Dividend Yield cho phân bón</div>
+              </div>
+              <div class="checklist-item" data-lesson="5.5" onclick="scrollToSection('lesson-5-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">5.5 - Backlog/Market Cap cho dịch vụ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 5.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-5-1">
+          <h2>5.1 Bẫy P/E với ngành chu kỳ</h2>
+
+          <p>P/E là chỉ số định giá phổ biến nhất, nhưng với ngành chu kỳ như dầu khí, P/E có thể dẫn bạn vào bẫy. Đây là bài học quan trọng nhất về định giá.</p>
+
+          <h3>Nghịch lý P/E ngành chu kỳ</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Ngành chu kỳ → P/E PHẢN TRỰC GIÁC:
+
+Đáy chu kỳ: P/E RẤT CAO hoặc âm (vì E thấp/lỗ) → NHƯNG đây là lúc MUA
+Đỉnh chu kỳ: P/E RẤT THẤP (vì E cao nhất) → NHƯNG đây là lúc BÁN
+
+SAI: "PVD P/E 8x = rẻ" → Có thể đang ở đỉnh chu kỳ, E sắp giảm
+ĐÚNG: "PVD P/E 30x nhưng giá dầu vừa chạm đáy" → Có thể là cơ hội vì E sắp phục hồi</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Bẫy lớn nhất</div>
+            <p>Khi cổ phiếu dầu khí có <strong>P/E thấp nhất</strong>, thường là lúc <strong>lợi nhuận cao nhất</strong> (đỉnh chu kỳ). Đây chính là lúc nguy hiểm nhất để mua, vì lợi nhuận sắp giảm. Ngược lại, P/E cao/âm thường là cơ hội tốt vì lợi nhuận đang ở đáy và sắp phục hồi.</p>
+          </div>
+
+          <h3>Ví dụ thực tế</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tình huống</th>
+                  <th>P/E</th>
+                  <th>Thực tế</th>
+                  <th>Hành động đúng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Giá dầu $100, PVD lãi kỷ lục</td>
+                  <td>8x</td>
+                  <td>Đỉnh chu kỳ, E sắp giảm</td>
+                  <td>Cẩn thận, xem xét bán</td>
+                </tr>
+                <tr>
+                  <td>Giá dầu $50, PVD lỗ</td>
+                  <td>Âm</td>
+                  <td>Đáy chu kỳ, E sắp phục hồi</td>
+                  <td>Xem xét mua</td>
+                </tr>
+                <tr>
+                  <td>Giá dầu bắt đầu hồi phục từ $50</td>
+                  <td>30x</td>
+                  <td>E vẫn thấp nhưng sắp tăng</td>
+                  <td>Cơ hội tốt để mua</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('5.1'); scrollToSection('lesson-5-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 5.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-5-2">
+          <h2>5.2 Phương pháp định giá theo phân khúc</h2>
+
+          <p>Mỗi phân khúc dầu khí cần phương pháp định giá khác nhau. Đây là hướng dẫn chi tiết.</p>
+
+          <h3>Bảng phương pháp định giá</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Phân khúc</th>
+                  <th>Phương pháp chính</th>
+                  <th>Lý do</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Upstream (PVD, PVS)</strong></td>
+                  <td>EV/EBITDA + P/E normalized</td>
+                  <td>Dùng E trung bình qua chu kỳ, không dùng E đỉnh/đáy</td>
+                </tr>
+                <tr>
+                  <td><strong>Lọc dầu (BSR)</strong></td>
+                  <td>EV/EBITDA + so sánh GRM với peer khu vực</td>
+                  <td>Biến động lớn, cần normalize</td>
+                </tr>
+                <tr>
+                  <td><strong>Bán lẻ (PLX)</strong></td>
+                  <td>P/E (tương đối ổn định)</td>
+                  <td>Biên cố định, LN phụ thuộc sản lượng</td>
+                </tr>
+                <tr>
+                  <td><strong>Phân bón (DPM, DCM)</strong></td>
+                  <td>P/E normalized + Dividend yield</td>
+                  <td>Cổ tức cao, dùng yield để đánh giá</td>
+                </tr>
+                <tr>
+                  <td><strong>Khí (GAS)</strong></td>
+                  <td>P/E + DCF</td>
+                  <td>Hợp đồng dài hạn, dòng tiền dự đoán được</td>
+                </tr>
+                <tr>
+                  <td><strong>Dịch vụ (PVS)</strong></td>
+                  <td>EV/EBITDA + Backlog/Market cap</td>
+                  <td>Backlog phản ánh DT tương lai</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">EV/EBITDA là gì?</div>
+            <p><strong>EV (Enterprise Value)</strong> = Vốn hóa + Nợ ròng. <strong>EBITDA</strong> = Lợi nhuận trước lãi vay, thuế, khấu hao. EV/EBITDA tốt hơn P/E cho ngành vốn nặng vì nó tính cả nợ vay và loại bỏ ảnh hưởng khấu hao.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('5.2'); scrollToSection('lesson-5-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 5.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-5-3">
+          <h2>5.3 Normalized P/E cho ngành chu kỳ</h2>
+
+          <p>Thay vì dùng E tại 1 thời điểm, hãy dùng E trung bình qua cả chu kỳ để có cái nhìn chính xác hơn.</p>
+
+          <h3>Công thức Normalized P/E</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>KHÔNG dùng E của 1 quý/năm → dùng E trung bình 5-7 năm (qua cả đỉnh lẫn đáy)
+
+VD: PVD
+- E đỉnh (giá dầu $100): EPS 3.000đ → P/E = 10x
+- E đáy (giá dầu $40): EPS 200đ → P/E = 150x
+- E trung bình 5 năm: EPS 1.500đ → Normalized P/E = 20x
+
+→ Dùng Normalized P/E 20x để so sánh, không dùng P/E tại 1 thời điểm</code></pre>
+
+          <h3>Cách tính Normalized P/E</h3>
+          <ol>
+            <li>Lấy EPS của 5-7 năm gần nhất (bao gồm cả năm tốt và năm xấu)</li>
+            <li>Tính EPS trung bình = Tổng EPS / Số năm</li>
+            <li>Normalized P/E = Giá hiện tại / EPS trung bình</li>
+          </ol>
+
+          <div class="info-box success">
+            <div class="info-box-title">Mức tham khảo Normalized P/E</div>
+            <p>Với cổ phiếu dầu khí Việt Nam, Normalized P/E <strong>10-15x</strong> là hợp lý, <strong>&lt;10x</strong> có thể là rẻ, <strong>&gt;20x</strong> có thể là đắt. Tuy nhiên, cần kết hợp với phân tích chu kỳ và vĩ mô để quyết định.</p>
+          </div>
+
+          <h3>Ví dụ thực tế</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Năm</th>
+                  <th>Giá dầu trung bình</th>
+                  <th>EPS PVD</th>
+                  <th>P/E tại thời điểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019</td>
+                  <td>$64</td>
+                  <td>1.200đ</td>
+                  <td>15x</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>$42</td>
+                  <td>-500đ (lỗ)</td>
+                  <td>Âm</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>$71</td>
+                  <td>800đ</td>
+                  <td>22x</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>$99</td>
+                  <td>2.500đ</td>
+                  <td>8x</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>$82</td>
+                  <td>1.800đ</td>
+                  <td>11x</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Trung bình 5 năm</strong></td>
+                  <td><strong>1.160đ</strong></td>
+                  <td><strong>Normalized P/E = 17x</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('5.3'); scrollToSection('lesson-5-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 5.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-5-4">
+          <h2>5.4 Dividend Yield cho phân bón</h2>
+
+          <p>DPM, DCM trả cổ tức rất cao (thường 50-80% lợi nhuận). Với cổ phiếu này, Dividend Yield là chỉ số quan trọng để đánh giá.</p>
+
+          <h3>Ngưỡng đánh giá Dividend Yield</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>DPM, DCM trả cổ tức RẤT CAO (thường 50-80% LN)
+→ Dùng Dividend Yield để đánh giá:
+
+- Yield > 10% → hấp dẫn (giá rẻ hoặc cổ tức quá cao - check bền không)
+- Yield 6-10% → hợp lý
+- Yield < 5% → đắt hoặc cổ tức sẽ giảm
+
+Lưu ý: Cổ tức phân bón BIẾN ĐỘNG theo giá urê
+→ Năm giá urê cao → cổ tức cao → yield cao → trông hấp dẫn
+→ Nhưng năm sau giá urê giảm → cổ tức giảm → yield thật thấp hơn
+→ PHẢI dùng cổ tức trung bình 3-5 năm, không dùng 1 năm</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Bẫy Dividend Yield</div>
+            <p>Tương tự bẫy P/E, Dividend Yield cao nhất thường xảy ra khi <strong>giá urê ở đỉnh</strong> và cổ tức đang cao bất thường. Khi giá urê giảm, cổ tức sẽ giảm theo, và yield thật thấp hơn bạn tưởng. Luôn dùng cổ tức trung bình 3-5 năm để tính yield chính xác.</p>
+          </div>
+
+          <h3>Ví dụ thực tế: DPM</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Năm</th>
+                  <th>Giá urê</th>
+                  <th>Cổ tức/CP</th>
+                  <th>Yield (giá 35.000đ)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020</td>
+                  <td>$250/tấn</td>
+                  <td>1.500đ</td>
+                  <td>4.3%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>$400/tấn</td>
+                  <td>3.000đ</td>
+                  <td>8.6%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>$700/tấn</td>
+                  <td>5.000đ</td>
+                  <td>14.3%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>$350/tấn</td>
+                  <td>2.000đ</td>
+                  <td>5.7%</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Trung bình 4 năm</strong></td>
+                  <td><strong>2.875đ</strong></td>
+                  <td><strong>8.2% (normalized)</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('5.4'); scrollToSection('lesson-5-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 5.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-5-5">
+          <h2>5.5 Backlog/Market Cap cho dịch vụ</h2>
+
+          <p>Với cổ phiếu dịch vụ như PVS, PVD, backlog (giá trị hợp đồng đã ký) là chỉ số quan trọng để đánh giá tiềm năng doanh thu tương lai.</p>
+
+          <h3>Backlog/Market Cap</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>PVS, PVD: Backlog = Giá trị hợp đồng đã ký chưa thực hiện
+
+Backlog / Market Cap:
+- > 1.0x → Hấp dẫn: giá trị hợp đồng > giá trị thị trường
+- 0.5-1.0x → Hợp lý
+- < 0.5x → Đắt hoặc hết hợp đồng
+
+Lưu ý: Backlog cao nhưng margin thấp → DT cao mà LN không tăng
+→ PHẢI check margin trên backlog mới</code></pre>
+
+          <h3>Ngưỡng đánh giá</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Backlog/MCap</th>
+                  <th>Đánh giá</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>&gt; 1.5x</strong></td>
+                  <td style="color: var(--success);">Rất hấp dẫn</td>
+                  <td>Giá trị hợp đồng lớn hơn nhiều so với vốn hóa</td>
+                </tr>
+                <tr>
+                  <td><strong>1.0x - 1.5x</strong></td>
+                  <td style="color: var(--success);">Hấp dẫn</td>
+                  <td>Giá trị hợp đồng lớn hơn vốn hóa</td>
+                </tr>
+                <tr>
+                  <td><strong>0.5x - 1.0x</strong></td>
+                  <td style="color: var(--warning);">Hợp lý</td>
+                  <td>Backlog ở mức bình thường</td>
+                </tr>
+                <tr>
+                  <td><strong>&lt; 0.5x</strong></td>
+                  <td style="color: var(--error);">Cẩn thận</td>
+                  <td>Backlog thấp, cần ký thêm hợp đồng</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Cảnh báo quan trọng</div>
+            <p>Backlog cao chưa chắc là tốt nếu <strong>margin thấp</strong>. Một số hợp đồng có giá trị lớn nhưng biên lợi nhuận thấp (cạnh tranh giá). Luôn kiểm tra: (1) Backlog bao nhiêu, (2) Margin trên backlog mới là bao nhiêu, (3) Thời gian thực hiện backlog là bao lâu.</p>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://finance.vietstock.vn" target="_blank" rel="noopener">finance.vietstock.vn</a> - Dữ liệu tài chính DN</li>
+            <li><a href="https://cafef.vn" target="_blank" rel="noopener">cafef.vn</a> - Phân tích cổ phiếu</li>
+            <li><a href="https://www.stockbiz.vn" target="_blank" rel="noopener">stockbiz.vn</a> - Dữ liệu lịch sử</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('5.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 5</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer5-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-4-macro.html" class="btn btn-secondary">← Lớp 4: Hiểu vĩ mô</a>
+          <a href="layer-6-advisory.html" class="btn btn-primary">Lớp 6: Tư vấn →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer5', 'layer5-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>

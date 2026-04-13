@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 3: Hiểu chu kỳ | Oil &amp; Gas Mastering</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">Oil &amp; <span>Gas</span></a>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">
+          <span>Tiến độ học</span>
+          <span id="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Dashboard</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Lớp 3: Hiểu chu kỳ</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="lesson-header">
+          <h1>Lớp 3: Hiểu chu kỳ</h1>
+          <div class="lesson-meta">
+            <span>~4 giờ</span>
+            <span>.</span>
+            <span>5 bài học</span>
+            <span>.</span>
+            <span>5 câu hỏi quiz</span>
+          </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="card" style="margin-bottom: var(--space-2xl)">
+          <div class="card-header">
+            <div class="card-title">Danh sách bài học</div>
+            <div class="card-subtitle">Hoàn thành từng bài để mở khóa bài tiếp theo</div>
+          </div>
+          <div class="card-body">
+            <div class="checklist">
+              <div class="checklist-item" data-lesson="3.1" onclick="scrollToSection('lesson-3-1')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">3.1 - Nguyên tắc cốt lõi về chu kỳ</div>
+              </div>
+              <div class="checklist-item" data-lesson="3.2" onclick="scrollToSection('lesson-3-2')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">3.2 - Chu kỳ giá dầu và cổ phiếu</div>
+              </div>
+              <div class="checklist-item" data-lesson="3.3" onclick="scrollToSection('lesson-3-3')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">3.3 - Bốn giai đoạn chu kỳ (Upstream)</div>
+              </div>
+              <div class="checklist-item" data-lesson="3.4" onclick="scrollToSection('lesson-3-4')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">3.4 - Tín hiệu sớm nhận biết đáy và đỉnh</div>
+              </div>
+              <div class="checklist-item" data-lesson="3.5" onclick="scrollToSection('lesson-3-5')">
+                <div class="checklist-check checklist-checkbox"></div>
+                <div class="checklist-label">3.5 - Chu kỳ đặc thù của phân bón</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 3.1
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-3-1">
+          <h2>3.1 Nguyên tắc cốt lõi về chu kỳ</h2>
+
+          <p>Dầu khí là ngành <strong>chu kỳ điển hình</strong> - lên xuống theo giá dầu. Hiểu chu kỳ giúp bạn biết khi nào nên mua, khi nào nên bán.</p>
+
+          <h3>Nguyên tắc cơ bản</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Dầu khí là ngành CHU KỲ ĐIỂN HÌNH - lên xuống theo giá dầu.
+Giá dầu quyết định 70% câu chuyện.
+
+Cổ phiếu dầu khí chạy TRƯỚC giá dầu:
+→ Giá CP tăng khi giá dầu BẮT ĐẦU hồi phục - dù LN vẫn xấu
+→ Giá CP giảm khi giá dầu BẮT ĐẦU giảm - dù LN vẫn tốt
+
+NHƯNG: Mỗi phân khúc phản ứng NGƯỢC NHAU với giá dầu
+→ Dầu tăng: Upstream XANH - Downstream ĐỎ
+→ Dầu giảm: Upstream ĐỎ - Downstream XANH</code></pre>
+
+          <div class="info-box important">
+            <div class="info-box-title">Quy tắc vàng</div>
+            <p>Cổ phiếu dầu khí <strong>chạy TRƯỚC</strong> giá dầu và kết quả kinh doanh. Khi bạn thấy BCTC xấu nhất, có thể giá cổ phiếu đã tăng rồi. Khi BCTC đẹp nhất, có thể giá cổ phiếu đã bắt đầu giảm. Đây là đặc thù của ngành chu kỳ.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('3.1'); scrollToSection('lesson-3-2')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 3.2
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-3-2">
+          <h2>3.2 Chu kỳ giá dầu và cổ phiếu</h2>
+
+          <p>Mỗi phân khúc phản ứng khác nhau khi giá dầu thay đổi. Đây là bản đồ chi tiết.</p>
+
+          <h3>Khi giá dầu TĂNG</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Giá dầu TĂNG:
+|-- Upstream (PVD, PVS): XANH - DT + LN tăng mạnh
+|-- GAS: XANH - Giá khí bán tăng theo giá dầu
+|-- Lọc dầu (BSR): VÀNG - Phụ thuộc crack spread - có thể tốt hoặc xấu
+|-- Bán lẻ (PLX): VÀNG - Lãi tồn kho ngắn hạn, nhưng biên cố định
+|-- Phân bón (DPM): ĐỎ - Giá khí đầu vào tăng → ép biên
+|   NHƯNG: nếu giá urê tăng NHANH HƠN giá khí → vẫn lời
+|__ Vận tải (PVT): XANH - Sản lượng vận chuyển tăng</code></pre>
+
+          <h3>Khi giá dầu GIẢM</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Giá dầu GIẢM:
+|-- Upstream (PVD, PVS): ĐỎ - CAPEX bị cắt, mất hợp đồng
+|-- GAS: ĐỎ - Giá khí bán giảm
+|-- Lọc dầu (BSR): VÀNG - Nhập dầu rẻ hơn, nhưng crack spread có thể giảm
+|-- Bán lẻ (PLX): VÀNG - Lỗ tồn kho ngắn hạn, nhưng sản lượng có thể tăng (xăng rẻ → dùng nhiều)
+|-- Phân bón (DPM): XANH - Giá khí đầu vào giảm → biên tăng
+|   NHƯNG: nếu giá urê giảm NHANH HƠN giá khí → vẫn lỗ
+|__ Vận tải (PVT): ĐỎ - Sản lượng giảm</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Sai lầm phổ biến</div>
+            <p><strong>"Giá dầu tăng = tốt cho tất cả dầu khí"</strong> là SAI. Giá dầu tăng tốt cho upstream (PVD, PVS, GAS) nhưng có thể XẤU cho downstream (PLX phải nhập đắt, DPM phải mua khí đắt). Luôn phân biệt rõ upstream và downstream.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('3.2'); scrollToSection('lesson-3-3')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 3.3
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-3-3">
+          <h2>3.3 Bốn giai đoạn chu kỳ (Upstream)</h2>
+
+          <p>Chu kỳ upstream có thể chia thành 4 giai đoạn. Nhận biết đúng giai đoạn giúp bạn quyết định mua/bán đúng thời điểm.</p>
+
+          <h3>4 giai đoạn chu kỳ</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Giai đoạn 1: ĐÁY
+|-- Giá dầu thấp (<$50-60), OPEC+ cắt sản lượng
+|-- PVN cắt CAPEX thăm dò, PVD/PVS mất hợp đồng
+|-- LN giảm mạnh hoặc lỗ
+|-- Nhưng: Giá dầu bắt đầu ổn định, OPEC+ siết cung
+|-- Giá CP: Bắt đầu tăng từ đáy
+|__ Trigger: Giá dầu chạm đáy + OPEC+ cắt giảm mạnh
+
+Giai đoạn 2: HỒI PHỤC (giá tăng mạnh nhất)
+|-- Giá dầu hồi phục ($60-80)
+|-- PVN tăng CAPEX, PVD/PVS ký hợp đồng mới
+|-- Backlog tăng, LN chuyển dương
+|-- Giá CP: TĂNG MẠNH NHẤT
+|__ Thường kéo dài 4-6 quý
+
+Giai đoạn 3: TĂNG TRƯỞNG
+|-- Giá dầu cao ($80-100+)
+|-- Sản lượng khai thác ổn định, LN tăng đều
+|-- Tất cả DN dầu khí đều lãi tốt
+|-- Giá CP: Tăng chậm hoặc đi ngang
+|__ Giá dầu đã phản ánh vào giá CP
+
+Giai đoạn 4: ĐỈNH → SUY GIẢM
+|-- Giá dầu bắt đầu giảm (cung tăng, cầu yếu)
+|-- OPEC+ bất đồng, không cắt giảm
+|-- PVN bắt đầu review CAPEX
+|-- LN vẫn tốt nhưng kỳ vọng giá dầu giảm
+|-- Giá CP: Bắt đầu giảm DÙ LN vẫn tốt
+|__ Trigger: Giá dầu phá vỡ hỗ trợ + OPEC+ không cắt giảm</code></pre>
+
+          <div class="info-box success">
+            <div class="info-box-title">Thời điểm tốt nhất để mua</div>
+            <p>Thời điểm tốt nhất để mua cổ phiếu upstream là <strong>cuối giai đoạn 1 (đáy) và đầu giai đoạn 2 (hồi phục)</strong>. Lúc này BCTC vẫn xấu, nhiều người sợ, nhưng giá dầu đã ngừng giảm và bắt đầu có tín hiệu hồi phục. Cổ phiếu thường tăng TRƯỚC khi BCTC đẹp.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('3.3'); scrollToSection('lesson-3-4')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 3.4
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-3-4">
+          <h2>3.4 Tín hiệu sớm nhận biết đáy và đỉnh</h2>
+
+          <p>Nhận biết đáy và đỉnh trước giúp bạn hành động đúng thời điểm. Đây là các tín hiệu cần theo dõi.</p>
+
+          <h3>Tín hiệu đáy đang hình thành</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Tín hiệu</th>
+                  <th>Đo bằng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>OPEC+ cắt giảm sản lượng mạnh</td>
+                  <td>Thông báo OPEC+</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Giá dầu ổn định 2-3 tháng không giảm thêm</td>
+                  <td>Brent chart</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Rig count toàn cầu chạm đáy</td>
+                  <td>Baker Hughes rig count</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PVN công bố tăng CAPEX thăm dò</td>
+                  <td>Kế hoạch PVN</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Tồn kho dầu thế giới bắt đầu giảm</td>
+                  <td>EIA weekly inventory</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Insider mua CP dầu khí</td>
+                  <td>Giao dịch nội bộ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Tín hiệu đỉnh đang hình thành</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Tín hiệu</th>
+                  <th>Tại sao nguy hiểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>OPEC+ bất đồng, một số nước tăng sản lượng</td>
+                  <td>Cung tăng → giá giảm</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Tồn kho dầu thế giới tăng</td>
+                  <td>Cung > cầu</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Nhu cầu dầu toàn cầu chậm lại (Trung Quốc yếu)</td>
+                  <td>Cầu giảm</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Giá dầu > $100 → kích thích sản xuất shale oil Mỹ</td>
+                  <td>Cung từ Mỹ tăng → ép giá</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PVN bắt đầu review/hoãn dự án</td>
+                  <td>CAPEX sắp bị cắt</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Insider bán CP</td>
+                  <td>Họ biết đỉnh rồi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="info-box info">
+            <div class="info-box-title">Nguồn theo dõi</div>
+            <p>Theo dõi tín hiệu chu kỳ qua: <a href="https://www.eia.gov" target="_blank">EIA</a> (tồn kho Mỹ), <a href="https://www.opec.org" target="_blank">OPEC</a> (quyết định sản lượng), <a href="https://rigcount.bakerhughes.com" target="_blank">Baker Hughes</a> (rig count), và thông báo của PVN.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('3.4'); scrollToSection('lesson-3-5')">
+              Hoàn thành → Bài tiếp
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Bài 3.5
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="lesson-3-5">
+          <h2>3.5 Chu kỳ đặc thù của phân bón</h2>
+
+          <p>Phân bón (DPM, DCM) có chu kỳ RIÊNG, không hoàn toàn theo giá dầu. Hiểu rõ chu kỳ này để tránh đánh giá sai.</p>
+
+          <h3>Yếu tố ảnh hưởng chu kỳ phân bón</h3>
+          <pre style="background: var(--bg-secondary); border: 1px solid var(--bg-tertiary); border-radius: var(--radius-md); padding: var(--space-lg); overflow-x: auto; font-size: var(--text-sm); line-height: 1.8;"><code>Phân bón có chu kỳ RIÊNG, không hoàn toàn theo giá dầu:
+
+Giá urê thế giới tăng (thường do):
+- Giá khí tự nhiên tăng mạnh ở EU (chi phí sản xuất tăng → giá bán tăng)
+- Trung Quốc hạn chế xuất khẩu urê (giảm cung)
+- Nhu cầu nông nghiệp mạnh (La Nina, mùa vụ lớn)
+→ DPM, DCM hưởng lợi NẾU giá khí đầu vào VN tăng CHẬM hơn giá urê
+
+Giá urê thế giới giảm (thường do):
+- EU hạ giá khí → sản xuất urê rẻ hơn → tăng cung
+- Trung Quốc mở cửa xuất khẩu
+- Nhu cầu nông nghiệp yếu (El Nino, hạn hán)
+→ DPM, DCM bị ép biên</code></pre>
+
+          <div class="info-box warning">
+            <div class="info-box-title">Khác biệt quan trọng</div>
+            <p>Trong khi upstream phụ thuộc <strong>giá dầu</strong>, phân bón phụ thuộc <strong>chênh lệch giá urê và giá khí</strong>. Có thể giá dầu tăng mà phân bón vẫn lời (nếu giá urê tăng nhanh hơn). Ngược lại, giá dầu giảm mà phân bón vẫn lỗ (nếu giá urê giảm nhanh hơn giá khí).</p>
+          </div>
+
+          <h3>Mùa vụ nông nghiệp và phân bón</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Vụ</th>
+                  <th>Thời gian</th>
+                  <th>Nhu cầu phân bón</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Vụ Đông Xuân</strong></td>
+                  <td>Tháng 11 - Tháng 2</td>
+                  <td>Trung bình</td>
+                </tr>
+                <tr>
+                  <td><strong>Vụ Hè Thu</strong></td>
+                  <td>Tháng 4 - Tháng 8</td>
+                  <td>Cao nhất (Q2-Q3)</td>
+                </tr>
+                <tr>
+                  <td><strong>Vụ Mùa</strong></td>
+                  <td>Tháng 5 - Tháng 11</td>
+                  <td>Cao</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Tham khảo</h3>
+          <ul>
+            <li><a href="https://www.indexmundi.com/commodities/?commodity=urea" target="_blank" rel="noopener">Index Mundi</a> - Giá urê thế giới</li>
+            <li><a href="https://tradingeconomics.com/commodity/natural-gas" target="_blank" rel="noopener">Trading Economics</a> - Giá khí tự nhiên</li>
+          </ul>
+
+          <div style="margin-top: var(--space-xl); display: flex; justify-content: flex-end;">
+            <button class="btn btn-primary" onclick="toggleLesson('3.5'); scrollToSection('quiz-section')">
+              Hoàn thành → Làm Quiz
+            </button>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             Quiz
+             ═══════════════════════════════════════════════════════ -->
+        <section class="lesson-section" id="quiz-section">
+          <h2>Quiz: Kiểm tra kiến thức Lớp 3</h2>
+          <p>Trả lời đúng ít nhất <strong>70%</strong> (4/5 câu) để hoàn thành lớp này.</p>
+          <div id="layer3-quiz"></div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="lesson-nav">
+          <a href="layer-2-metrics.html" class="btn btn-secondary">← Lớp 2: Đọc số</a>
+          <a href="layer-4-macro.html" class="btn btn-primary">Lớp 4: Hiểu vĩ mô →</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../quizzes/quiz-data.js"></script>
+  <script src="../js/progress.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // -- Initialize quiz --
+    Quiz.init('layer3', 'layer3-quiz', 5);
+
+    // -- Update checklist UI --
+    function updateChecklist() {
+      document.querySelectorAll('.checklist-item').forEach(function(item) {
+        var lessonId = item.dataset.lesson;
+        if (Progress.isLessonCompleted(lessonId)) {
+          item.classList.add('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '✓';
+        } else {
+          item.classList.remove('completed');
+          item.querySelector('.checklist-checkbox').innerHTML = '';
+        }
+      });
+    }
+
+    // -- Toggle lesson completion --
+    function toggleLesson(lessonId) {
+      Progress.completeLesson(lessonId);
+      updateChecklist();
+      App.updateProgressBar();
+      App.renderSidebar();
+    }
+
+    // -- Smooth scroll to section --
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Initial checklist render
+    updateChecklist();
+  </script>
+</body>
+</html>
