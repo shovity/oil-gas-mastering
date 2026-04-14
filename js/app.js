@@ -9,15 +9,20 @@
 /**
  * Extract filename from window.location.pathname.
  * Returns 'index.html' as default for root paths.
+ * Handles URLs with or without .html extension.
  * @returns {string}
  */
 function getCurrentPage() {
   const pathname = window.location.pathname;
   const parts = pathname.split('/');
   const filename = parts[parts.length - 1];
-  // Treat empty string or directory-like paths as index.html
-  if (!filename || filename === '' || !filename.includes('.')) {
+  // Treat empty string or root paths as index.html
+  if (!filename || filename === '') {
     return 'index.html';
+  }
+  // If no extension, append .html (e.g., /pvs-timeline -> pvs-timeline.html)
+  if (!filename.includes('.')) {
+    return filename + '.html';
   }
   return filename;
 }
@@ -102,6 +107,21 @@ function renderSidebar() {
       `</a>`
     );
   });
+
+  html.push('</div>');
+
+  // ── Analysis Tools ─────────────────────────────────────────────────────────
+  html.push('<div class="nav-section">');
+  html.push('<div class="nav-section-title">Phân tích</div>');
+
+  // PVS Timeline link
+  const isPVSTimeline = currentPage === 'pvs-timeline.html';
+  html.push(
+    `<a href="/pvs-timeline.html" class="nav-item${isPVSTimeline ? ' active' : ''}">` +
+      `<span class="nav-item-status">📈</span>` +
+      `<span class="nav-item-text">PVS Timeline</span>` +
+    `</a>`
+  );
 
   html.push('</div>');
 

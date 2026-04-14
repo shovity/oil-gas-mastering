@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npx serve -S"
+    "start": "npx serve -S -p 9895"
   }
 }
