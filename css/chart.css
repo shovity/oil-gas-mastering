@@ -74,12 +74,12 @@
 
 .chart-inner {
   min-width: 2500px;
-  height: 550px;
+  height: 700px;
   position: relative;
 }
 
 .chart-wrapper canvas {
-  height: 550px !important;
+  height: 700px !important;
 }
 
 /* Scroll hint indicator */

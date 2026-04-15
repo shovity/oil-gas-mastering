@@ -105,7 +105,7 @@
       chartInner.style.width = chartWidth + 'px';
     }
     ctx.width = chartWidth;
-    ctx.height = 550;
+    ctx.height = 700;
 
     chartInstance = new Chart(ctx, {
       type: 'line',
